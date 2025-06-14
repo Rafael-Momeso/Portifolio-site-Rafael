@@ -3,93 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Rafael Roque Momesso</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <title>Meu portfólio - Rafael Roque Momesso</title>
 </head>
-
 <body>
 
-  <!-- NAVBAR FIXA COM LOGO E CONTATOS -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="imagens/logo-rm.jpg" alt="Logo RM Celulares" width="40" height="40" class="me-2 rounded" />
-        <span class="fw-bold">RM Celulares</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-        <ul class="navbar-nav">
-          <li class="nav-item me-3">
-            <a class="nav-link" href="tel:+5519997538639" style="color: #dc3545;">
-              <i class="bi bi-telephone-fill"></i> (19) 99753-8639
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/momesso001" target="_blank" style="color: #6c757d;">
-              <i class="bi bi-instagram"></i> @momesso001
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HEADER COM FOTO E DESCRIÇÃO -->
-  <header class="container text-center mt-5">
-    <img src="imagens/avatar-rafael.jpg" alt="Foto do Rafael Roque Momesso" class="rounded-circle mt-5" width="150" height="150" />
-    <h1>Rafael Roque Momesso</h1>
-    <p class="lead">Técnico em Manutenção de Celulares e Instalações CFTV</p>
-    <p>
-      Tenho 16 anos e sou apaixonado por tecnologia. Tenho formação em informática, robótica, programação e manutenção de celulares. Trabalho com consertos, vendas e instalações. Aqui você pode conhecer um pouco mais sobre o meu trabalho e projetos!
-    </p>
-
-    <div class="mt-3">
-      <p class="badge badge-preto">Manutenção de Celulares</p>
-      <p class="badge badge-cinza">CFTV</p>
-      <p class="badge badge-vermelho">Informática</p>
-      <p class="badge badge-preto">Robótica</p>
-      <p class="badge badge-vermelho">Programação</p>
-    </div>
-  </header>
-
-  <!-- PROJETOS -->
-  <main class="container mt-5">
-    <h2 class="text-center">Meus Trabalhos</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="imagens/celular.jpg" class="img-fluid rounded mb-3" alt="Manutenção de celular" />
-        <p>Restauração do smartphone Moto G6 Plus.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="imagens/fabrica.jpg" class="img-fluid rounded mb-3" alt="Instalação de câmera de segurança" />
-        <p>Manutenção do sistema de câmeras CFTV em empresa.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="imagens/loja.jpg" class="img-fluid rounded mb-3" alt="Bancada de trabalho" />
-        <p>Meu novo espaço para vendas.</p>
-      </div>
-    </div>
-
-    <!-- CONTATO -->
-    <section id="contact-section" class="mt-5 mb-5 text-center">
-      <h2>Contato</h2>
-      <p>Quer falar comigo? Me envie uma mensagem ou venha me visitar:</p>
-      <ul class="list-unstyled">
-        <li><strong>Telefone:</strong> <a href="tel:+5519997538639">+55 19 99753-8639</a></li>
-        <li><strong>Endereço:</strong> Rua Hans Beran, Parque Lagoa Serena, Porto Ferreira/SP</li>
-        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/momesso001" target="_blank">@momesso001</a></li>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="imagens/logo-rm.jpg" alt="Logo RM Celulares" width="40" height="40" class="me-2 rounded" />
+      <span class="fw-bold">RM Celulares</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </div>
+</nav>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- HEADER -->
+<header class="text-center mt-5 pt-5">
+  <img src="imagens/avatar-rafael.jpg" class="rounded-circle" width="150" height="150" alt="Avatar">
+  <h1 class="mt-3">Rafael Roque Momesso</h1>
+  <p class="lead">Técnico em Manutenção de Celulares e Instalações CFTV</p>
+</header>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="container mt-5 text-center">
+  <h2>Serviços</h2>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <i class="bi bi-phone-fill icon-grande"></i>
+      <h5>Manutenção</h5>
+      <p>Consertos de smartphones e tablets.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-camera-video-fill icon-grande"></i>
+      <h5>Instalação CFTV</h5>
+      <p>Câmeras de segurança residenciais e comerciais.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-pc-display icon-grande"></i>
+      <h5>Informática</h5>
+      <p>Montagem, limpeza e configuração de PCs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFÓLIO / CARROSSEL -->
+<section id="portfolio" class="container mt-5">
+  <h2 class="text-center">Meus Trabalhos</h2>
+  <div id="carouselTrabalhos" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/celular.jpg" class="d-block w-100 rounded" alt="Celular">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Reparo Moto G6 Plus</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/fabrica.jpg" class="d-block w-100 rounded" alt="CFTV">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Instalação em empresa</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/loja.jpg" class="d-block w-100 rounded" alt="Loja">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Nova bancada de vendas</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrabalhos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTrabalhos" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="container text-center mt-5 mb-5">
+  <h2>Contato</h2>
+  <p>Fale comigo pelo WhatsApp ou Instagram:</p>
+  <p>
+    <a href="tel:+5519997538639" class="btn btn-outline-danger me-2">
+      <i class="bi bi-whatsapp"></i> (19) 99753-8639
+    </a>
+    <a href="https://www.instagram.com/momesso001" target="_blank" class="btn btn-outline-secondary">
+      <i class="bi bi-instagram"></i> @momesso001
+    </a>
+  </p>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="text-center py-3 bg-dark text-white">
+  <p>Rafael Roque Momesso &copy; <span id="ano"></span></p>
+</footer>
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<a href="#" id="topBtn" title="Voltar ao topo"><i class="bi bi-arrow-up-circle-fill"></i></a>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+  const topBtn = document.getElementById("topBtn");
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  };
+</script>
 </body>
 </html>
