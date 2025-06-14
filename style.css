@@ -1,35 +1,56 @@
 /* Fonte e fundo */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #000000, #3d0d1d);
-  color: #eee;
-  margin-top: 80px;
+  background: linear-gradient(135deg, #000000, #c70b59);
+  color: #f0f0f0;
+  margin-top: 80px; /* espaço por causa da navbar fixa */
 }
 
 /* Navbar */
 .navbar {
   background-color: #000000 !important;
-  box-shadow: 0 2px 10px rgba(220, 53, 69, 0.4);
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.3);
+}
+
+.navbar .nav-link {
+  color: #ccc;
+  transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-  color: #ff6f75 !important;
+  color: #dc3545 !important;
 }
 
-/* Badges */
-.badge-preto {
-  background-color: #000000;
-  color: #eee;
+/* Moldura LED animada na foto */
+.foto-perfil-led {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle at center, #ff0000 15%, transparent 40%), 
+    conic-gradient(#ff0000 0deg 60deg, transparent 60deg 120deg, #ff0000 120deg 180deg, transparent 180deg 240deg, #ff0000 240deg 300deg, transparent 300deg 360deg);
+  background-size: 100% 100%;
+  animation: led-glow 2.5s linear infinite;
+  box-shadow: 0 0 12px 4px rgba(255, 0, 0, 0.8);
 }
 
-.badge-cinza {
-  background-color: #6c757d;
-  color: #eee;
+.foto-perfil-led img {
+  display: block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.badge-vermelho {
-  background-color: #dc3545;
-  color: #fff;
+/* Animação do LED */
+@keyframes led-glow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 360% 0%;
+  }
 }
 
 /* Títulos */
@@ -37,158 +58,121 @@ h1, h2 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
-  color: #f5f5f5;
+  color: #f8f8f8;
 }
 
 h2 {
   margin-top: 40px;
-  border-bottom: 2px solid #dc3545;
+  border-bottom: 3px solid #dc3545;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
-/* Descrição header */
-.descricao {
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-  color: #ddd;
-  font-size: 1.1rem;
-  line-height: 1.5;
+/* Badges */
+.badge-preto {
+  background-color: #000;
+  color: #fff;
+  margin: 4px 6px;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 15px;
+  display: inline-block;
 }
 
-/* Moldura LED vermelha animada na foto */
-.avatar-led {
-  width: 150px;
-  height: 150px;
-  padding: 6px;
-  border-radius: 50%;
-  box-shadow:
-    0 0 8px #dc3545,
-    0 0 20px #dc3545,
-    0 0 30px #dc3545,
-    0 0 40px #ff4c4c;
-  animation: ledPulse 2.5s ease-in-out infinite;
-  margin-bottom: 10px;
-  overflow: hidden;
-  position: relative;
+.badge-cinza {
+  background-color: #6c757d;
+  color: #fff;
+  margin: 4px 6px;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 15px;
+  display: inline-block;
 }
 
-@keyframes ledPulse {
-  0%, 100% {
-    box-shadow:
-      0 0 8px #dc3545,
-      0 0 20px #dc3545,
-      0 0 30px #dc3545,
-      0 0 40px #ff4c4c;
-  }
-  50% {
-    box-shadow:
-      0 0 12px #ff4c4c,
-      0 0 28px #ff4c4c,
-      0 0 38px #dc3545,
-      0 0 55px #dc3545;
-  }
-}
-
-/* Imagem da foto principal */
-.avatar-led img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-/* Carrossel */
-.carousel {
-  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.5);
-}
-
-.carousel-indicators [data-bs-target] {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+.badge-vermelho {
   background-color: #dc3545;
-  opacity: 0.7;
-  transition: opacity 0.3s;
+  color: #fff;
+  margin: 4px 6px;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 15px;
+  display: inline-block;
 }
 
-.carousel-indicators .active {
-  opacity: 1;
-  background-color: #f8f9fa;
+/* Projetos */
+img.img-fluid {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 8px 15px;
-  border-radius: 10px;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-  bottom: 20px;
-}
-
-.carousel-item.active .carousel-caption {
-  opacity: 1;
-}
-
-/* Controles */
-.carousel-control-prev span,
-.carousel-control-next span {
-  filter: drop-shadow(0 0 1px #9e0000);
+img.img-fluid:hover {
+  transform: scale(1.05);
 }
 
 /* Contato */
 #contact-section {
   background-color: #1c1c1c;
-  padding: 30px;
+  padding: 30px 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
   margin-top: 40px;
   color: #ddd;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#contact-section a {
-  color: #dc3545;
+/* Links do telefone e insta com hover */
+.telefone-link,
+.instagram-link {
+  color: #bbb;
+  transition: color 0.3s ease;
   text-decoration: none;
 }
 
-#contact-section a:hover {
-  color: #ff6f75;
-  text-decoration: underline;
-}
-
-/* Links gerais */
-a {
+.telefone-link:hover,
+.instagram-link:hover {
   color: #dc3545;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/* Botão subir ao topo */
+/* Espaço e layout projetos */
+.container .row {
+  margin-top: 30px;
+  gap: 1.5rem;
+}
+
+/* Botão voltar ao topo */
 #btnTop {
+  display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
   background-color: #dc3545;
   border: none;
-  padding: 10px 14px;
   border-radius: 50%;
-  display: none;
+  padding: 10px 14px;
+  color: white;
+  font-size: 24px;
   cursor: pointer;
-  box-shadow: 0 0 8px #dc3545;
-  z-index: 999;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.7);
   transition: background-color 0.3s ease;
+  z-index: 9999;
 }
 
 #btnTop:hover {
-  background-color: #ff4c4c;
-  box-shadow: 0 0 15px #ff4c4c;
+  background-color: #b02a37;
 }
 
-/* Espaçamento do container */
-.container .row {
-  margin-top: 30px;
+/* Ajustes responsivos para o botão no celular */
+@media (max-width: 576px) {
+  #btnTop {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 8px 12px;
+  }
 }
