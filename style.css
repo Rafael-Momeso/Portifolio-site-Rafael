@@ -1,7 +1,7 @@
 /* Fonte e fundo */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #000000, #2e6323); /* preto pro cinza */
+    background: linear-gradient(to right, #000000, #236338); /* preto pro cinza */
     color: white;
     margin-top: 80px; /* espaço por causa da navbar fixa */
 }
