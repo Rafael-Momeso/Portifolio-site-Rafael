@@ -12,7 +12,7 @@
 
 <body>
 
-  <!-- NAVBAR FIXA COM LOGO E CONTATOS -->
+  <!-- NAVBAR FIXA -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
@@ -41,7 +41,7 @@
     </div>
   </nav>
 
-  <!-- HEADER COM FOTO E DESCRIÇÃO -->
+  <!-- HEADER -->
   <header class="container text-center mt-5">
     <img src="imagens/avatar-rafael.jpg" alt="Foto do Rafael Roque Momesso" class="rounded-circle mt-5 shadow" width="150" height="150" />
     <h1>Rafael Roque Momesso</h1>
@@ -95,6 +95,11 @@
     </section>
   </main>
 
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="btn-back-to-top" title="Voltar ao topo">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
   <!-- RODAPÉ -->
   <footer>
     <p>© 2025 Rafael Roque Momesso - Todos os direitos reservados.</p>
@@ -102,5 +107,22 @@
 
   <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mostrar/esconder botão voltar ao topo ao rolar a página
+    const btnBackToTop = document.getElementById("btn-back-to-top");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        btnBackToTop.style.display = "flex";
+      } else {
+        btnBackToTop.style.display = "none";
+      }
+    });
+
+    // Ao clicar, rola suavemente até o topo
+    btnBackToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
