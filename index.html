@@ -3,85 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RM Celulares - Rafael Momesso</title>
-  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Meu portfólio - Rafael Roque Momesso</title>
 </head>
+
 <body>
 
   <!-- Vídeo de fundo -->
-  <video autoplay muted loop id="bg-video">
-    <source src="Video/fundo.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos em HTML5.
+  <video autoplay muted loop id="background-video" playsinline>
+    <source src="video/fundo.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo em background.
   </video>
 
-  <!-- Navbar -->
+  <!-- NAVBAR FIXA COM LOGO E CONTATOS -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="imagens/logo-rm.jpg" alt="Logo RM" width="40" height="40" class="me-2 rounded-circle" />
-        <strong>RM Celulares</strong>
+        <img src="imagens/logo-rm.jpg" alt="Logo RM Celulares" width="40" height="40" class="me-2 rounded" />
+        <span class="fw-bold">RM Celulares</span>
       </a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
         <ul class="navbar-nav">
-          <li class="nav-item me-3"><a class="nav-link text-danger" href="tel:+5519997538639"><i class="bi bi-telephone-fill"></i> (19) 99753-8639</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="https://instagram.com/momesso001" target="_blank"><i class="bi bi-instagram"></i> @momesso001</a></li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="tel:+5519997538639" style="color: #dc3545;">
+              <i class="bi bi-telephone-fill"></i> (19) 99753-8639
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/momesso001" target="_blank" style="color: #6c757d;">
+              <i class="bi bi-instagram"></i> @momesso001
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Cabeçalho -->
-  <header class="text-center text-light container mt-5 pt-5">
-    <img src="imagens/avatar-rafael.jpg" alt="Rafael" class="rounded-circle mt-5" width="140" height="140" />
-    <h1 class="mt-3">Rafael Roque Momesso</h1>
-    <p class="lead">Técnico em Manutenção de Celulares & Instalações CFTV</p>
-    <p>Com apenas 16 anos, já possuo experiência em informática, robótica, programação e manutenção de celulares. Conquistei meu espaço com dedicação e amor à tecnologia!</p>
-    <div class="badges">
-      <span class="badge bg-dark">Celulares</span>
-      <span class="badge bg-secondary">CFTV</span>
-      <span class="badge bg-danger">Informática</span>
-      <span class="badge bg-warning text-dark">Robótica</span>
-      <span class="badge bg-info text-dark">Programação</span>
+  <!-- HEADER COM FOTO E DESCRIÇÃO -->
+  <header class="container text-center mt-5">
+    <img src="imagens/avatar-rafael.jpg" alt="Foto do Rafael Roque Momesso" class="rounded-circle mt-5" width="150" height="150" />
+    <h1>Rafael Roque Momesso</h1>
+    <p class="lead">Técnico em Manutenção de Celulares e Instalações CFTV</p>
+    <p>
+      Tenho 16 anos e sou apaixonado por tecnologia. Tenho formação em informática, robótica, programação e manutenção de celulares. Trabalho com consertos, vendas e instalações. Aqui você pode conhecer um pouco mais sobre o meu trabalho e projetos!
+    </p>
+
+    <div class="mt-3">
+      <p class="badge badge-preto">Manutenção de Celulares</p>
+      <p class="badge badge-cinza">CFTV</p>
+      <p class="badge badge-vermelho">Informática</p>
+      <p class="badge badge-preto">Robótica</p>
+      <p class="badge badge-vermelho">Programação</p>
     </div>
   </header>
 
-  <!-- Trabalhos -->
-  <section class="container text-light mt-5">
+  <!-- PROJETOS -->
+  <main class="container mt-5">
     <h2 class="text-center">Meus Trabalhos</h2>
-    <div class="row mt-4">
+    <div class="row">
       <div class="col-md-4">
-        <img src="imagens/celular.jpg" alt="Conserto de celular" class="img-fluid rounded" />
-        <p class="mt-2">Restauração completa de um Moto G6 Plus.</p>
+        <img src="imagens/celular.jpg" class="img-fluid rounded mb-3" alt="Manutenção de celular" />
+        <p>Restauração do smartphone Moto G6 Plus.</p>
       </div>
       <div class="col-md-4">
-        <img src="imagens/fabrica.jpg" alt="CFTV" class="img-fluid rounded" />
-        <p class="mt-2">Instalação de câmeras de segurança em indústria.</p>
+        <img src="imagens/fabrica.jpg" class="img-fluid rounded mb-3" alt="Instalação de câmera de segurança" />
+        <p>Manutenção do sistema de câmeras CFTV em empresa.</p>
       </div>
       <div class="col-md-4">
-        <img src="imagens/loja.jpg" alt="Loja" class="img-fluid rounded" />
-        <p class="mt-2">Nova bancada de trabalho e vendas.</p>
+        <img src="imagens/loja.jpg" class="img-fluid rounded mb-3" alt="Bancada de trabalho" />
+        <p>Meu novo espaço para vendas.</p>
       </div>
     </div>
-  </section>
 
-  <!-- Contato -->
-  <section class="container mt-5 text-light text-center" id="contato">
-    <h2>Entre em Contato</h2>
-    <p>Fale comigo ou faça uma visita:</p>
-    <p><i class="bi bi-geo-alt-fill"></i> Rua Hans Beran - Lagoa Serena, Porto Ferreira/SP</p>
-    <p><i class="bi bi-telephone"></i> <a href="tel:+5519997538639" class="text-danger">(19) 99753-8639</a></p>
-    <p><i class="bi bi-instagram"></i> <a href="https://instagram.com/momesso001" class="text-light" target="_blank">@momesso001</a></p>
-  </section>
+    <!-- CONTATO -->
+    <section id="contact-section" class="mt-5 mb-5 text-center">
+      <h2>Contato</h2>
+      <p>Quer falar comigo? Me envie uma mensagem ou venha me visitar:</p>
+      <ul class="list-unstyled">
+        <li><strong>Telefone:</strong> <a href="tel:+5519997538639">+55 19 99753-8639</a></li>
+        <li><strong>Endereço:</strong> Rua Hans Beran, Parque Lagoa Serena, Porto Ferreira/SP</li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/momesso001" target="_blank">@momesso001</a></li>
+      </ul>
+    </section>
+  </main>
 
-  <!-- Botão de voltar ao topo -->
-  <a href="#" class="btn btn-danger back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="btnTop" title="Voltar ao topo">
+    <i class="bi bi-arrow-up-circle-fill" style="font-size: 2rem; color: #dc3545;"></i>
+  </button>
 
-  <!-- Scripts -->
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Mostrar botão voltar ao topo quando rolar a página
+    const btnTop = document.getElementById('btnTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btnTop.style.display = 'block';
+      } else {
+        btnTop.style.display = 'none';
+      }
+    });
+
+    btnTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
 </body>
 </html>
