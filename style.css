@@ -1,5 +1,5 @@
 /* Fonte e fundo */
-#body {
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #000000, #740a48); /* preto pro cinza */
     color: white;
