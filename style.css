@@ -1,71 +1,88 @@
 /* Fundo com vídeo */
 #bg-video {
   position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
   z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.4);
 }
 
-/* Geral */
+/* Estilo geral */
 body {
   font-family: 'Poppins', sans-serif;
   color: #f8f9fa;
   margin-top: 80px;
 }
 
-/* Cores da marca */
-.badge-preto { background: #000; color: white; }
-.badge-cinza { background: #6c757d; color: white; }
-.badge-vermelho { background: #dc3545; color: white; }
-
-/* Títulos */
-h1, h2 {
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ffffff;
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.3);
 }
 
+.navbar .nav-link {
+  color: #f8f9fa !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Badges */
+.badge-preto {
+  background-color: #000;
+  color: white;
+}
+
+.badge-cinza {
+  background-color: #6c757d;
+  color: white;
+}
+
+.badge-vermelho {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Cabeçalho */
+header h1 {
+  color: #ffc107;
+  margin-top: 20px;
+}
+
+header p {
+  color: #e0e0e0;
+}
+
+/* Títulos */
 h2 {
+  color: #ffffff;
   border-bottom: 2px solid #dc3545;
   display: inline-block;
   padding-bottom: 5px;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #000000 !important;
-  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.4);
-}
-.navbar .nav-link:hover {
-  color: #ff4d6d !important;
+  margin-top: 40px;
 }
 
 /* Imagens */
 img {
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
-img:hover {
-  transform: scale(1.03);
-}
 
-/* Carrossel */
-.carousel-inner img {
-  max-height: 400px;
-  object-fit: cover;
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
 /* Contato */
 #contact-section {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
-  border-radius: 15px;
-  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+  color: #f8f9fa;
 }
 
 /* Links */
@@ -73,21 +90,33 @@ a {
   color: #ffc107;
   text-decoration: none;
 }
+
 a:hover {
-  color: #ffffff;
   text-decoration: underline;
+  color: #fff;
 }
 
-/* Botão voltar ao topo */
-#top-btn {
+/* Botão de subir */
+#scrollTopBtn {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  background-color: #dc3545;
+  color: white;
   font-size: 2rem;
-  color: #ffc107;
-  display: block;
+  border-radius: 50%;
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
-#top-btn:hover {
-  color: #ffffff;
+
+#scrollTopBtn:hover {
+  background-color: #ff0033;
+}
+
+@media (max-width: 768px) {
+  #scrollTopBtn {
+    display: block;
+  }
 }
