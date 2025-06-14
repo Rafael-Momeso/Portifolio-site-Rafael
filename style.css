@@ -1,0 +1,101 @@
+/* Fonte e fundo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #000000, #233263); /* preto pro cinza */
+    color: white;
+    margin-top: 80px; /* espaço por causa da navbar fixa */
+}
+
+/* Cores da marca */
+.badge-preto {
+    background-color: #000000;
+    color: white;
+}
+
+.badge-cinza {
+    background-color: #6c757d;
+    color: white;
+}
+
+.badge-vermelho {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Títulos */
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #f1f1f1;
+    border-bottom: 2px solid #dc3545;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Navbar com efeito */
+.navbar {
+    background-color: #000000 !important;
+    box-shadow: 0 2px 10px rgba(255, 0, 0, 0.3);
+}
+
+.navbar .nav-link:hover {
+    color: #b62f3c !important;
+}
+
+/* Cabeçalho */
+header h1 {
+    color: #dc3545;
+}
+
+header p {
+    color: #dcdcdc;
+}
+
+/* Imagens dos projetos */
+img {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Cartões */
+.card {
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+/* Contato */
+#contact-section {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+/* Links */
+a {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Espaço blocos */
+.container .row {
+    margin-top: 30px;
+}
