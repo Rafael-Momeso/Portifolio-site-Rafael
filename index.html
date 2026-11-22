@@ -1,117 +1,518 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Meu portfólio - Rafael Roque Momesso</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="RM Soluções & Tecnologia: câmeras, acessórios para bike, eletrônicos e ferramentas.">
+  <title>RM | Soluções & Tecnologia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR FIXA COM LOGO E CONTATOS -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="imagens/logo-rm.jpg" alt="Logo RM Celulares" width="40" height="40" class="me-2 rounded" />
-        <span class="fw-bold">RM Celulares</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div class="top-accent"></div>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item me-3">
-            <a class="nav-link telefone-link" href="tel:+5519997538639">
-              <i class="bi bi-telephone-fill"></i> (19) 99753-8639
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link instagram-link" href="https://www.instagram.com/momesso001" target="_blank">
-              <i class="bi bi-instagram"></i> @momesso001
-            </a>
-          </li>
-        </ul>
+<!-- MENU -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+      <span class="logo-mark">RM<span>.</span></span>
+      <span class="brand-sub">SOLUÇÕES <b>&</b><br>TECNOLOGIA</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre a RM</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-contact" href="https://wa.me/5519997538639" target="_blank">
+            <i class="bi bi-whatsapp"></i> Fale conosco
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- BANNER PRINCIPAL -->
+<header class="hero" id="inicio">
+  <div class="hero-pattern"></div>
+
+  <div class="container hero-inner">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-7">
+        <div class="eyebrow"><span></span> RM SOLUÇÕES & TECNOLOGIA</div>
+
+        <h1>Tecnologia para<br>o seu <em>dia a dia.</em></h1>
+
+        <p class="hero-text">
+          Segurança, ciclismo, ferramentas e eletrônicos.
+          Produtos e soluções para facilitar sua rotina.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#destaques" class="btn-red">
+            Ver produtos em destaque <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <a href="https://wa.me/5519997538639" target="_blank" class="btn-outline">
+            <i class="bi bi-whatsapp"></i> Consultar pelo WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-notes">
+          <span><i class="bi bi-check-circle-fill"></i> Atendimento direto</span>
+          <span><i class="bi bi-check-circle-fill"></i> Produtos selecionados</span>
+        </div>
       </div>
-    </div>
-  </nav>
 
-  <!-- HEADER COM FOTO E DESCRIÇÃO -->
-  <header class="container text-center mt-5">
-    <div class="foto-perfil-led">
-      <img src="imagens/avatar-rafael.jpg" alt="Foto do Rafael Roque Momesso" class="rounded-circle" width="150" height="150" />
+      <div class="col-lg-5">
+        <!-- FOTO PRINCIPAL DA LOJA -->
+        <div class="hero-image image-placeholder hero-placeholder">
+          <i class="bi bi-image"></i>
+          <strong>FOTO PRINCIPAL DA LOJA</strong>
+          <small>imagens/banner-loja.jpg</small>
+        </div>
+
+        <div class="hero-float">
+          <i class="bi bi-lightning-charge-fill"></i>
+          <span>TECNOLOGIA<br><b>AO SEU ALCANCE</b></span>
+        </div>
+      </div>
+
     </div>
-    <h1>Rafael Roque Momesso</h1>
-    <p class="lead">Técnico em Manutenção de Celulares e Instalações CFTV</p>
-    <p>
-      Tenho 16 anos e sou apaixonado por tecnologia. Tenho formação em informática, robótica, programação e manutenção de celulares. Trabalho com consertos, vendas e instalações. Aqui você pode conhecer um pouco mais sobre o meu trabalho e projetos!
+  </div>
+
+  <div class="hero-line"></div>
+</header>
+
+<!-- PRODUTOS EM DESTAQUE -->
+<section class="section section-dark" id="destaques">
+  <div class="container">
+
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow"><span></span> ESCOLHAS DA RM</div>
+        <h2>Produtos em <em>destaque.</em></h2>
+      </div>
+
+      <p>
+        Uma seleção de produtos que merecem ficar na vitrine.
+        Consulte modelos, valores e disponibilidade com nossa equipe.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- PRODUTO 1: KIT DE CÂMERAS -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-camera-video"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>kit-cameras.jpg</small>
+            <b class="product-tag">DESTAQUE</b>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">SEGURANÇA ELETRÔNICA</span>
+            <h3>Kits de câmeras</h3>
+            <p>Kits para monitoramento residencial e comercial, com opções conforme a necessidade.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre os kits de câmeras." target="_blank">
+              Consultar produto <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- PRODUTO 2: FERRAMENTAS PARA BIKE -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-tools"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>kit-ferramentas-bike.jpg</small>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">CICLISMO</span>
+            <h3>Kit de ferramentas para bike</h3>
+            <p>Ferramentas e acessórios para manutenção e ajustes da bicicleta.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre ferramentas para bike." target="_blank">
+              Consultar produto <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- PRODUTO 3: COMPRESSOR -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-wind"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>compressor-portatil.jpg</small>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">CICLISMO</span>
+            <h3>Compressores portáteis</h3>
+            <p>Opções compactas para encher pneus e auxiliar no dia a dia.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre compressores." target="_blank">
+              Consultar produto <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- PRODUTO 4: PEÇAS DE BIKE -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-bicycle"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>pecas-bike.jpg</small>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">CICLISMO</span>
+            <h3>Peças e acessórios bike</h3>
+            <p>Itens para equipar, personalizar e cuidar da sua bicicleta.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero conhecer as peças para bike." target="_blank">
+              Consultar produtos <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- PRODUTO 5: CICLOCOMPUTADOR -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-speedometer2"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>ciclocomputador.jpg</small>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">CICLISMO</span>
+            <h3>Ciclocomputadores</h3>
+            <p>Equipamentos para acompanhar informações e dados dos seus pedais.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre ciclocomputadores." target="_blank">
+              Consultar produto <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- PRODUTO 6: KIT REPARO DE PNEUS -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-bandaid"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>kit-reparo-pneus.jpg</small>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">CICLISMO</span>
+            <h3>Kits de reparo de pneus</h3>
+            <p>Acessórios compactos para pequenos reparos durante seus trajetos.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre kits de reparo." target="_blank">
+              Consultar produto <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- PRODUTO 7: FONES -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-earbuds"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>fones-ouvido.jpg</small>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">ELETRÔNICOS</span>
+            <h3>Fones de ouvido</h3>
+            <p>Modelos para música, chamadas e entretenimento no dia a dia.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero conhecer os fones disponíveis." target="_blank">
+              Consultar produtos <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- PRODUTO 8: CARREGADORES -->
+      <div class="col-sm-6 col-lg-3">
+        <article class="product-card">
+
+          <div class="product-photo image-placeholder">
+            <i class="bi bi-plug"></i>
+            <span>FOTO DO PRODUTO</span>
+            <small>carregadores-cabos.jpg</small>
+          </div>
+
+          <div class="product-info">
+            <span class="product-type">ELETRÔNICOS</span>
+            <h3>Carregadores e cabos</h3>
+            <p>Acessórios para carregar e conectar seus dispositivos.</p>
+
+            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero consultar carregadores e cabos." target="_blank">
+              Consultar produtos <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+    </div>
+
+    <p class="stock-note">
+      <i class="bi bi-info-circle"></i>
+      Fotos, modelos, preços e disponibilidade podem ser atualizados conforme os produtos da loja.
     </p>
 
-    <div class="mt-3 badges-container">
-      <span class="badge badge-preto">Manutenção de Celulares</span>
-      <span class="badge badge-cinza">CFTV</span>
-      <span class="badge badge-vermelho">Informática</span>
-      <span class="badge badge-preto">Robótica</span>
-      <span class="badge badge-vermelho">Programação</span>
-    </div>
-  </header>
+  </div>
+</section>
 
-  <!-- PROJETOS -->
-  <main class="container mt-5">
-    <h2 class="text-center">Meus Trabalhos</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <img src="imagens/celular.jpg" class="img-fluid rounded mb-3" alt="Manutenção de celular" />
-        <p>Restauração do smartphone Moto G6 Plus.</p>
+<!-- CATEGORIAS -->
+<section class="section categories-section" id="categorias">
+  <div class="container">
+
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow"><span></span> MAIS PARA DESCOBRIR</div>
+        <h2>Explore nossas <em>categorias.</em></h2>
       </div>
-      <div class="col-md-4">
-        <img src="imagens/fabrica.jpg" class="img-fluid rounded mb-3" alt="Instalação de câmera de segurança" />
-        <p>Manutenção do sistema de câmeras CFTV em empresa.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="imagens/loja.jpg" class="img-fluid rounded mb-3" alt="Bancada de trabalho" />
-        <p>Meu novo espaço para vendas.</p>
-      </div>
+
+      <p>
+        Não dá para colocar todo o estoque no site.
+        Organizamos as principais linhas para você encontrar o que procura.
+      </p>
     </div>
 
-    <!-- CONTATO -->
-    <section id="contact-section" class="mt-5 mb-5 text-center">
-      <h2>Contato</h2>
-      <p>Quer falar comigo? Me envie uma mensagem ou venha me visitar:</p>
-      <ul class="list-unstyled">
-        <li><strong>Telefone:</strong> <a class="telefone-link" href="tel:+5519997538639">+55 19 99753-8639</a></li>
-        <li><strong>Instagram:</strong> <a class="instagram-link" href="https://www.instagram.com/momesso001" target="_blank">@momesso001</a></li>
-      </ul>
-    </section>
-  </main>
+    <div class="row g-3">
 
-  <!-- BOTÃO VOLTAR AO TOPO -->
-  <button id="btnTop" title="Voltar ao topo" aria-label="Voltar ao topo">
-    <i class="bi bi-arrow-up-short"></i>
-  </button>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-camera-video"></i>
+          <b>Câmeras e CFTV</b>
+          <span>Kits e acessórios</span>
+        </a>
+      </div>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const btnTop = document.getElementById('btnTop');
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-bicycle"></i>
+          <b>Peças para bike</b>
+          <span>Componentes e acessórios</span>
+        </a>
+      </div>
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        btnTop.style.display = 'block';
-      } else {
-        btnTop.style.display = 'none';
-      }
-    });
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-wrench-adjustable"></i>
+          <b>Ferramentas</b>
+          <span>Manutenção e utilidades</span>
+        </a>
+      </div>
 
-    btnTop.addEventListener('click', () => {
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-  </script>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-speedometer2"></i>
+          <b>Ciclismo eletrônico</b>
+          <span>Ciclocomputadores</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-earbuds"></i>
+          <b>Áudio</b>
+          <span>Fones e caixas de som</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-phone"></i>
+          <b>Acessórios mobile</b>
+          <span>Carregadores e cabos</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-lightning-charge"></i>
+          <b>Elétrica</b>
+          <span>Materiais e componentes</span>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <a class="category-tile" href="#destaques">
+          <i class="bi bi-box-seam"></i>
+          <b>Novidades</b>
+          <span>Gadgets e importados</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHAMADA PARA CONTATO -->
+<section class="solutions-section">
+  <div class="container">
+
+    <div class="solutions-box">
+
+      <div>
+        <div class="eyebrow"><span></span> PRECISA DE ALGO ESPECÍFICO?</div>
+
+        <h2>Não encontrou o que<br>estava procurando?</h2>
+
+        <p>
+          Chame a RM! Nossa vitrine mostra apenas uma seleção dos destaques.
+          Consulte outros produtos, modelos e disponibilidade diretamente com a equipe.
+        </p>
+
+        <a class="btn-red" href="https://wa.me/5519997538639" target="_blank">
+          Consultar pelo WhatsApp <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="solutions-art">
+        <i class="bi bi-chat-square-dots"></i>
+        <span>ATENDIMENTO RM</span>
+        <b>Vamos encontrar<br>o que você precisa.</b>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="section about-section" id="sobre">
+  <div class="container about-content">
+
+    <div class="about-logo">
+      <span class="logo-mark">RM<span>.</span></span>
+      <small>SOLUÇÕES & TECNOLOGIA</small>
+    </div>
+
+    <div>
+      <div class="eyebrow"><span></span> SOBRE A LOJA</div>
+
+      <h2>Tecnologia, variedade<br>e atendimento <em>próximo.</em></h2>
+
+      <p>
+        A RM reúne produtos de segurança eletrônica, ciclismo,
+        ferramentas e eletrônicos. Uma vitrine com alguns dos nossos
+        destaques — e uma equipe pronta para ajudar você a consultar outras opções.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact-section" id="contato">
+  <div class="container contact-panel">
+
+    <div>
+      <div class="eyebrow"><span></span> FALE COM A GENTE</div>
+      <h2>Vamos conversar?</h2>
+      <p>Consulte um produto, tire suas dúvidas ou peça um orçamento.</p>
+    </div>
+
+    <div class="contact-links">
+      <a href="https://wa.me/5519997538639" target="_blank" class="whatsapp-link">
+        <i class="bi bi-whatsapp"></i> (19) 99753-8639
+      </a>
+
+      <a href="https://www.instagram.com/rmcelulares/" target="_blank" class="instagram-link">
+        <i class="bi bi-instagram"></i> @rmcelulares
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+  <div class="container footer-inner">
+
+    <a href="#inicio" class="footer-brand">
+      <span class="logo-mark">RM<span>.</span></span>
+      SOLUÇÕES & TECNOLOGIA
+    </a>
+
+    <p>Produtos e soluções para o seu dia a dia.</p>
+
+    <small>
+      © <span id="year"></span> RM Soluções & Tecnologia.
+      Todos os direitos reservados.
+    </small>
+
+  </div>
+</footer>
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a class="floating-whatsapp" href="https://wa.me/5519997538639" target="_blank" aria-label="Chamar a RM">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<button id="btnTop" aria-label="Voltar ao topo">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
