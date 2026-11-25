@@ -847,3 +847,28 @@ p {
     transition: none !important;
   }
 }
+
+/* CONFIGURAÇÃO GERAL DAS IMAGENS */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* BANNER DA LOJA */
+.banner-loja {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+    .banner-loja {
+        height: 180px;
+    }
+}
