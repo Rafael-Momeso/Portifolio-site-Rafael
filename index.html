@@ -1,17 +1,22 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111317">
 
   <title>RM Soluções & Tecnologia</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,33 +34,61 @@
         <div class="brand-sub">SOLUÇÕES <b>&</b> TECNOLOGIA</div>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Abrir menu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="menu">
+
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#produtos">Produtos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#categorias">Categorias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+
           <li class="nav-item ms-lg-3">
-            <a class="nav-contact" href="https://wa.me/5519997538639" target="_blank">
-              <i class="bi bi-whatsapp"></i> Fale conosco
+            <a class="nav-contact"
+               href="https://wa.me/5519997538639"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="bi bi-whatsapp"></i>
+              Fale conosco
             </a>
           </li>
-        </ul>
-      </div>
 
+        </ul>
+
+      </div>
     </div>
   </nav>
 
 
   <!-- BANNER PRINCIPAL -->
   <header class="hero" id="inicio">
+
     <div class="hero-pattern"></div>
 
     <div class="container hero-inner">
+
       <div class="row align-items-center g-5">
 
         <div class="col-lg-6">
@@ -77,204 +110,358 @@
           </p>
 
           <div class="hero-buttons">
+
             <a href="#produtos" class="btn-red">
               Conheça nossos produtos
               <i class="bi bi-arrow-right"></i>
             </a>
 
-            <a href="https://wa.me/5519997538639" target="_blank" class="btn-outline">
+            <a href="https://wa.me/5519997538639"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-outline">
               <i class="bi bi-whatsapp"></i>
               Entre em contato
             </a>
+
           </div>
 
           <div class="hero-notes">
-            <div><i class="bi bi-check-circle-fill"></i> Variedade de produtos</div>
-            <div><i class="bi bi-check-circle-fill"></i> Atendimento especializado</div>
+
+            <div>
+              <i class="bi bi-check-circle-fill"></i>
+              Variedade de produtos
+            </div>
+
+            <div>
+              <i class="bi bi-check-circle-fill"></i>
+              Atendimento especializado
+            </div>
+
           </div>
 
         </div>
 
+
         <div class="col-lg-6">
 
-          <!-- ESPAÇO PARA FOTO PRINCIPAL -->
+          <!-- IMAGEM PRINCIPAL -->
           <div class="hero-image">
-  <img src="imagens/Logo.png" alt="RM Soluções e Tecnologia">
+            <img
+              src="imagens/Logo.png"
+              alt="RM Soluções e Tecnologia">
           </div>
 
           <div class="hero-float">
+
             <i class="bi bi-lightning-charge-fill"></i>
+
             <span>
               TECNOLOGIA E SOLUÇÕES
               <br>
               <b>RM Soluções & Tecnologia</b>
             </span>
+
           </div>
 
         </div>
 
       </div>
+
     </div>
 
     <div class="hero-line"></div>
+
   </header>
 
 
   <!-- PRODUTOS -->
   <section class="section" id="produtos">
+
     <div class="container">
 
       <div class="section-heading">
+
         <div>
-          <div class="eyebrow"><span></span> NOSSA SELEÇÃO</div>
-          <h2>Produtos em <em>destaque.</em></h2>
+
+          <div class="eyebrow">
+            <span></span>
+            NOSSA SELEÇÃO
+          </div>
+
+          <h2>
+            Produtos em <em>destaque.</em>
+          </h2>
+
         </div>
 
         <p>
           Confira alguns dos produtos disponíveis em nossa loja.
           Consulte modelos, disponibilidade e valores.
         </p>
+
       </div>
+
 
       <div class="row g-4">
 
         <!-- PRODUTO 1 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 1 -->
+              <img src="imagens/produto1.png" alt="Kit de câmeras">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">SEGURANÇA</span>
+
               <h3>Kit de câmeras</h3>
-              <p>Equipamentos para monitoramento e segurança de ambientes.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Equipamentos para monitoramento e segurança de ambientes.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
+
 
         <!-- PRODUTO 2 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 2 -->
+              <img src="imagens/produto2.png" alt="Ferramentas e acessórios">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">FERRAMENTAS</span>
+
               <h3>Ferramentas e acessórios</h3>
-              <p>Produtos para manutenção, instalações e trabalhos diversos.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Produtos para manutenção, instalações e trabalhos diversos.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
+
 
         <!-- PRODUTO 3 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 3 -->
+              <img src="imagens/produto3.png" alt="Eletrônicos e gadgets">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">ELETRÔNICOS</span>
+
               <h3>Eletrônicos e gadgets</h3>
-              <p>Produtos tecnológicos para facilitar o dia a dia.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Produtos tecnológicos para facilitar o dia a dia.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
+
 
         <!-- PRODUTO 4 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 4 -->
+              <img src="imagens/produto4.png" alt="Acessórios para bicicletas">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">ACESSÓRIOS</span>
+
               <h3>Acessórios para bicicletas</h3>
-              <p>Lanternas, garrafinhas e acessórios para sua bicicleta.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Lanternas, garrafinhas e acessórios para sua bicicleta.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
+
 
         <!-- PRODUTO 5 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 5 -->
+              <img src="imagens/produto5.png" alt="Acessórios mobile">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">MOBILIDADE</span>
+
               <h3>Acessórios mobile</h3>
-              <p>Carregadores, cabos e acessórios para dispositivos móveis.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Carregadores, cabos e acessórios para dispositivos móveis.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
+
 
         <!-- PRODUTO 6 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 6 -->
+              <img src="imagens/produto6.png" alt="Materiais elétricos">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">ELÉTRICA</span>
+
               <h3>Materiais elétricos</h3>
-              <p>Materiais e componentes para instalações elétricas.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Materiais e componentes para instalações elétricas.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
+
 
         <!-- PRODUTO 7 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 7 -->
+              <img src="imagens/produto7.png" alt="Caixas de som">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">ÁUDIO</span>
+
               <h3>Caixas de som</h3>
-              <p>Equipamentos de áudio para diferentes ocasiões.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Equipamentos de áudio para diferentes ocasiões.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
 
+
         <!-- PRODUTO 8 -->
         <div class="col-md-6 col-lg-3">
+
           <div class="product-card">
+
             <div class="product-photo">
-              <!-- IMAGEM DO PRODUTO 8 -->
+              <img src="imagens/produto8.png" alt="Motores de portão">
             </div>
+
             <div class="product-info">
+
               <span class="product-type">AUTOMAÇÃO</span>
+
               <h3>Motores de portão</h3>
-              <p>Equipamentos e acessórios para automatização de portões.</p>
-              <a href="https://wa.me/5519997538639" target="_blank" class="product-link">
-                Consultar produto <i class="bi bi-arrow-right"></i>
+
+              <p>
+                Equipamentos e acessórios para automatização de portões.
+              </p>
+
+              <a href="https://wa.me/5519997538639"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="product-link">
+                Consultar produto
+                <i class="bi bi-arrow-right"></i>
               </a>
+
             </div>
           </div>
         </div>
 
       </div>
+
 
       <p class="stock-note">
         <i class="bi bi-info-circle"></i>
@@ -287,18 +474,30 @@
 
   <!-- CATEGORIAS -->
   <section class="section categories-section" id="categorias">
+
     <div class="container">
 
       <div class="section-heading">
+
         <div>
-          <div class="eyebrow"><span></span> O QUE VOCÊ PROCURA?</div>
-          <h2>Nossas <em>categorias.</em></h2>
+
+          <div class="eyebrow">
+            <span></span>
+            O QUE VOCÊ PROCURA?
+          </div>
+
+          <h2>
+            Nossas <em>categorias.</em>
+          </h2>
+
         </div>
 
         <p>
           Diferentes segmentos e soluções para atender suas necessidades.
         </p>
+
       </div>
+
 
       <div class="row g-3">
 
@@ -367,35 +566,52 @@
         </div>
 
       </div>
+
     </div>
   </section>
 
 
   <!-- CHAMADA -->
   <section class="solutions-section">
+
     <div class="container">
 
       <div class="solutions-box">
 
         <div>
-          <div class="eyebrow"><span></span> PRECISA DE UMA SOLUÇÃO?</div>
 
-          <h2>Conte com a <em>RM.</em></h2>
+          <div class="eyebrow">
+            <span></span>
+            PRECISA DE UMA SOLUÇÃO?
+          </div>
+
+          <h2>
+            Conte com a <em>RM.</em>
+          </h2>
 
           <p>
             Está procurando algum produto ou precisa de informações?
             Entre em contato com nossa equipe e consulte as opções disponíveis.
           </p>
 
-          <a href="https://wa.me/5519997538639" target="_blank" class="btn-red">
+          <a href="https://wa.me/5519997538639"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn-red">
             Solicitar atendimento
             <i class="bi bi-arrow-right"></i>
           </a>
+
         </div>
 
-        <!-- ESPAÇO PARA IMAGEM OU ARTE -->
+
+        <!-- IMAGEM OPCIONAL -->
         <div class="solutions-art">
-          <!-- IMAGEM OPCIONAL -->
+          <!--
+          Para adicionar imagem, coloque aqui:
+
+          <img src="imagens/arte.png" alt="RM Soluções">
+          -->
         </div>
 
       </div>
@@ -406,19 +622,31 @@
 
   <!-- SOBRE -->
   <section class="section about-section" id="sobre">
+
     <div class="container">
 
       <div class="about-content">
 
-        <!-- ESPAÇO PARA LOGO -->
+        <!-- LOGO RM -->
         <div class="about-logo">
-          <!-- IMAGEM DA LOGO RM -->
+          <!--
+          Para adicionar a logo:
+
+          <img src="imagens/Logo.png" alt="Logo RM">
+          -->
         </div>
 
-        <div>
-          <div class="eyebrow"><span></span> QUEM SOMOS</div>
 
-          <h2>RM Soluções <em>& Tecnologia.</em></h2>
+        <div>
+
+          <div class="eyebrow">
+            <span></span>
+            QUEM SOMOS
+          </div>
+
+          <h2>
+            RM Soluções <em>& Tecnologia.</em>
+          </h2>
 
           <p>
             A RM trabalha com produtos, equipamentos e soluções
@@ -431,6 +659,7 @@
             e um atendimento próximo, ajudando cada cliente
             a encontrar o que precisa.
           </p>
+
         </div>
 
       </div>
@@ -441,24 +670,41 @@
 
   <!-- CONTATO -->
   <section class="contact-section" id="contato">
+
     <div class="container">
 
       <div class="contact-panel">
 
         <div>
-          <div class="eyebrow"><span></span> FALE COM A GENTE</div>
+
+          <div class="eyebrow">
+            <span></span>
+            FALE COM A GENTE
+          </div>
+
           <h2>Vamos conversar?</h2>
-          <p>Entre em contato e consulte nossos produtos.</p>
+
+          <p>
+            Entre em contato e consulte nossos produtos.
+          </p>
+
         </div>
+
 
         <div class="contact-links">
 
-          <a href="https://wa.me/5519997538639" target="_blank" class="whatsapp-link">
+          <a href="https://wa.me/5519997538639"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="whatsapp-link">
             <i class="bi bi-whatsapp"></i>
             WhatsApp
           </a>
 
-          <a href="https://www.instagram.com/rmcelulares/" target="_blank" class="instagram-link">
+          <a href="https://www.instagram.com/rmcelulares/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="instagram-link">
             <i class="bi bi-instagram"></i>
             Instagram
           </a>
@@ -473,28 +719,47 @@
 
   <!-- RODAPÉ -->
   <footer class="footer">
+
     <div class="container">
 
       <div class="footer-brand">
+
         <div class="logo-mark">R<span>M</span></div>
+
         SOLUÇÕES & TECNOLOGIA
+
       </div>
 
-      <p>Produtos, tecnologia e soluções para você.</p>
+      <p>
+        Produtos, tecnologia e soluções para você.
+      </p>
 
-      <small>© 2026 RM Soluções & Tecnologia. Todos os direitos reservados.</small>
+      <small>
+        © <span id="year"></span> RM Soluções & Tecnologia.
+        Todos os direitos reservados.
+      </small>
 
     </div>
+
   </footer>
 
 
   <!-- WHATSAPP FLUTUANTE -->
-  <a href="https://wa.me/5519997538639" target="_blank" class="floating-whatsapp">
+  <a href="https://wa.me/5519997538639"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="floating-whatsapp"
+     aria-label="Fale conosco pelo WhatsApp">
+
     <i class="bi bi-whatsapp"></i>
+
   </a>
 
 
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
