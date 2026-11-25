@@ -1,3 +1,4 @@
+
 const WHATSAPP = "5519997538639";
 
 function abrirWhatsApp(mensagem) {
