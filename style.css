@@ -1,7 +1,7 @@
 
-/* ==============================
+/* =====================================
    CONFIGURAÇÕES GERAIS
-============================== */
+===================================== */
 
 * {
   margin: 0;
@@ -21,8 +21,8 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -30,9 +30,14 @@ a {
   margin: auto;
 }
 
-/* ==============================
+img {
+  max-width: 100%;
+}
+
+
+/* =====================================
    CABEÇALHO
-============================== */
+===================================== */
 
 .header {
   background: #111214;
@@ -62,6 +67,7 @@ a {
 
 nav {
   display: flex;
+  align-items: center;
   gap: 25px;
   flex-wrap: wrap;
 }
@@ -76,21 +82,22 @@ nav a:hover {
   color: #e32636;
 }
 
-/* ==============================
+
+/* =====================================
    BOTÕES
-============================== */
+===================================== */
 
 .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   background: #e32636;
-  color: white;
+  color: #fff;
   padding: 13px 22px;
   border-radius: 5px;
   font-weight: 700;
-  transition: .2s;
   border: 1px solid #e32636;
+  transition: .2s;
   cursor: pointer;
 }
 
@@ -115,21 +122,10 @@ nav a:hover {
   border-color: #e32636;
 }
 
-/* ==============================
-   INÍCIO
-============================== */
 
-.hero {
-  padding: 85px 0;
-  background: radial-gradient(circle at 80% 40%, #292022 0, #101113 48%);
-}
-
-.hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 55px;
-}
+/* =====================================
+   TEXTOS PADRÃO
+===================================== */
 
 .eyebrow {
   display: inline-block;
@@ -140,13 +136,6 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-.hero h1 {
-  font-size: clamp(40px, 5vw, 65px);
-  line-height: 1.08;
-  letter-spacing: -2px;
-  margin-bottom: 22px;
-}
-
 .hero h1 span,
 .section-heading h2 span,
 .laser-text h2 span,
@@ -154,10 +143,36 @@ nav a:hover {
   color: #e32636;
 }
 
-.hero-text p,
-.section-heading p,
-.laser-text p,
-.contact p {
+
+/* =====================================
+   SEÇÃO INICIAL
+===================================== */
+
+.hero {
+  padding: 85px 0;
+  background:
+    radial-gradient(
+      circle at 80% 40%,
+      #292022 0,
+      #101113 48%
+    );
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+}
+
+.hero-text p {
   color: #aaa;
   max-width: 520px;
 }
@@ -169,7 +184,11 @@ nav a:hover {
   margin-top: 30px;
 }
 
-/* IMAGEM PRINCIPAL: MOLDURA ACOMPANHA A FOTO */
+
+/* =====================================
+   FOTO PRINCIPAL
+   MOLDURA ACOMPANHA A FOTO
+===================================== */
 
 .hero-image {
   width: 100%;
@@ -178,18 +197,20 @@ nav a:hover {
   border: 1px solid #383838;
   border-radius: 10px;
   background: transparent;
+  display: block;
 }
 
 .hero-image img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   object-fit: contain;
 }
 
-/* ==============================
-   BENEFÍCIOS
-============================== */
+
+/* =====================================
+   DIFERENCIAIS
+===================================== */
 
 .benefits {
   background: #191a1d;
@@ -220,9 +241,10 @@ nav a:hover {
   font-size: 14px;
 }
 
-/* ==============================
+
+/* =====================================
    SEÇÕES
-============================== */
+===================================== */
 
 .section {
   padding: 85px 0;
@@ -243,12 +265,14 @@ nav a:hover {
 }
 
 .section-heading p {
+  color: #aaa;
   margin: auto;
 }
 
-/* ==============================
-   PRODUTOS
-============================== */
+
+/* =====================================
+   CATÁLOGO DE PRODUTOS
+===================================== */
 
 .products-grid {
   display: grid;
@@ -269,17 +293,32 @@ nav a:hover {
   border-color: #e32636;
 }
 
-/* FOTOS DOS PRODUTOS */
 
-.product-card > img {
+/* =====================================
+   FOTOS DOS PRODUTOS
+   SEM ALTURA FIXA
+===================================== */
+
+.product-photo {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  background: #242529;
+}
+
+.product-photo img {
   display: block;
   width: 100%;
-  height: 220px;
+  height: auto;
   object-fit: contain;
   object-position: center;
-  background: #242529;
-  padding: 8px;
 }
+
+
+/* =====================================
+   INFORMAÇÕES DOS PRODUTOS
+===================================== */
 
 .product-info {
   padding: 22px;
@@ -293,7 +332,6 @@ nav a:hover {
 .product-info p {
   color: #aaa;
   font-size: 14px;
-  min-height: 45px;
   margin-bottom: 17px;
 }
 
@@ -301,15 +339,17 @@ nav a:hover {
   color: #ef4b58;
   font-size: 14px;
   font-weight: 700;
+  display: inline-block;
 }
 
 .consultar:hover {
-  color: white;
+  color: #fff;
 }
 
-/* ==============================
+
+/* =====================================
    GRAVAÇÃO A LASER
-============================== */
+===================================== */
 
 .laser {
   padding: 75px 0;
@@ -325,7 +365,8 @@ nav a:hover {
   gap: 55px;
 }
 
-/* MOLDURA ACOMPANHA A FOTO */
+
+/* FOTO LASER - MOLDURA AUTOMÁTICA */
 
 .laser-image {
   width: 100%;
@@ -334,22 +375,25 @@ nav a:hover {
   background: transparent;
   border: 1px solid #383838;
   border-radius: 8px;
+  display: block;
 }
 
 .laser-image img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   object-fit: contain;
 }
 
 .laser-text p {
+  color: #aaa;
   margin-bottom: 25px;
 }
 
-/* ==============================
+
+/* =====================================
    SOBRE
-============================== */
+===================================== */
 
 .about-content {
   display: grid;
@@ -363,13 +407,18 @@ nav a:hover {
   font-size: 16px;
 }
 
-/* ==============================
+
+/* =====================================
    CONTATO
-============================== */
+===================================== */
 
 .contact {
   text-align: center;
-  background: linear-gradient(135deg, #211719, #111214);
+  background: linear-gradient(
+    135deg,
+    #211719,
+    #111214
+  );
 }
 
 .contact-content {
@@ -379,12 +428,14 @@ nav a:hover {
 }
 
 .contact p {
+  color: #aaa;
   margin-bottom: 25px;
 }
 
-/* ==============================
+
+/* =====================================
    RODAPÉ
-============================== */
+===================================== */
 
 .footer {
   background: #0b0c0e;
@@ -406,30 +457,34 @@ nav a:hover {
   font-size: 13px;
 }
 
-/* ==============================
-   WHATSAPP FLUTUANTE
-============================== */
+
+/* =====================================
+   WHATSAPP FIXO
+===================================== */
 
 .floating-whatsapp {
   position: fixed;
   right: 22px;
   bottom: 22px;
   background: #20b85a;
-  color: white;
+  color: #fff;
   padding: 13px 19px;
   border-radius: 30px;
   font-weight: 700;
   box-shadow: 0 5px 20px #0008;
   z-index: 99;
+  transition: .2s;
 }
 
 .floating-whatsapp:hover {
   background: #159447;
+  transform: translateY(-3px);
 }
 
-/* ==============================
+
+/* =====================================
    TABLETS
-============================== */
+===================================== */
 
 @media (max-width: 850px) {
 
@@ -458,11 +513,13 @@ nav a:hover {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
-/* ==============================
+
+/* =====================================
    CELULARES
-============================== */
+===================================== */
 
 @media (max-width: 550px) {
 
@@ -496,4 +553,5 @@ nav a:hover {
     right: 15px;
     bottom: 15px;
   }
+
 }

@@ -4,17 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#101113">
+
   <title>RM Soluções & Tecnologia</title>
-  <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="header">
   <div class="container nav">
+
     <a href="#inicio" class="logo">RM<span>.</span></a>
+
     <nav>
       <a href="#inicio">Início</a>
       <a href="#produtos">Produtos</a>
@@ -22,17 +29,32 @@
       <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn-small" href="#contato">Fale conosco</a>
+
+    <a href="#contato" class="btn btn-small">Fale conosco</a>
+
   </div>
 </header>
 
 <main>
+
+  <!-- INÍCIO -->
+
   <section class="hero" id="inicio">
     <div class="container hero-content">
+
       <div class="hero-text">
         <span class="eyebrow">RM SOLUÇÕES & TECNOLOGIA</span>
-        <h1>Tecnologia,<br><span>soluções</span> e inovação.</h1>
-        <p>Produtos, equipamentos e soluções para sua casa, empresa e dia a dia.</p>
+
+        <h1>
+          Tecnologia,<br>
+          <span>soluções e inovação.</span>
+        </h1>
+
+        <p>
+          Produtos, equipamentos e soluções para sua casa,
+          empresa e dia a dia.
+        </p>
+
         <div class="hero-buttons">
           <a href="#produtos" class="btn">Conheça nossos produtos</a>
           <a href="#contato" class="btn btn-outline">Entre em contato</a>
@@ -40,108 +62,161 @@
       </div>
 
       <div class="hero-image">
-        <!-- IMAGEM PRINCIPAL -->
-        <img src="imagens/loja/logo2.jpeg" alt="RM Soluções e Tecnologia">
+        <img
+          src="imagens/banner-loja.jpg"
+          alt="RM Soluções e Tecnologia">
       </div>
+
     </div>
   </section>
+
+
+  <!-- DIFERENCIAIS -->
 
   <section class="benefits">
     <div class="container benefits-grid">
-      <div><strong>01</strong><span>Qualidade nos produtos</span></div>
-      <div><strong>02</strong><span>Variedade de soluções</span></div>
-      <div><strong>03</strong><span>Atendimento especializado</span></div>
+
+      <div>
+        <strong>01</strong>
+        <span>Qualidade nos produtos</span>
+      </div>
+
+      <div>
+        <strong>02</strong>
+        <span>Variedade de soluções</span>
+      </div>
+
+      <div>
+        <strong>03</strong>
+        <span>Atendimento especializado</span>
+      </div>
+
     </div>
   </section>
 
+
+  <!-- PRODUTOS -->
+
   <section class="section products" id="produtos">
     <div class="container">
+
       <div class="section-heading">
         <span class="eyebrow">NOSSO CATÁLOGO</span>
-        <h2>Conheça nossos <span>produtos</span></h2>
+
+        <h2>
+          Conheça nossos <span>produtos</span>
+        </h2>
+
         <p>Confira algumas das nossas categorias.</p>
       </div>
+
 
       <div class="products-grid">
 
         <article class="product-card">
-          <img src="imagens/produtos/materiais-eletricos.jpg" alt="Materiais elétricos">
+          <div class="product-photo">
+            <img src="imagens/produtos/materiais-eletricos.jpg" alt="Materiais elétricos">
+          </div>
           <div class="product-info">
             <h3>Materiais elétricos</h3>
             <p>Tomadas, conectores, cabos e componentes.</p>
-            <a class="consultar" data-produto="Materiais elétricos" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Materiais elétricos">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/cameras.jpg" alt="Câmeras e segurança">
+          <div class="product-photo">
+            <img src="imagens/produtos/cameras.jpg" alt="Câmeras e segurança">
+          </div>
           <div class="product-info">
             <h3>Câmeras e segurança</h3>
             <p>Câmeras, alarmes e equipamentos de segurança.</p>
-            <a class="consultar" data-produto="Câmeras e segurança" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Câmeras e segurança">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/motores-portao.jpg" alt="Motores para portões">
+          <div class="product-photo">
+            <img src="imagens/produtos/motores-portao.jpg" alt="Motores para portões">
+          </div>
           <div class="product-info">
             <h3>Motores para portões</h3>
             <p>Automatizadores e acessórios para portões.</p>
-            <a class="consultar" data-produto="Motores para portões" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Motores para portões">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/acessorios-celular.jpg" alt="Acessórios para celular">
+          <div class="product-photo">
+            <img src="imagens/produtos/acessorios-celular.jpg" alt="Acessórios para celular">
+          </div>
           <div class="product-info">
             <h3>Acessórios para celular</h3>
             <p>Cabos, carregadores, suportes e acessórios.</p>
-            <a class="consultar" data-produto="Acessórios para celular" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Acessórios para celular">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/acessorios-bike.jpg" alt="Acessórios para bicicletas">
+          <div class="product-photo">
+            <img src="imagens/produtos/acessorios-bike.jpg" alt="Acessórios para bicicletas">
+          </div>
           <div class="product-info">
             <h3>Acessórios para bikes</h3>
             <p>Lanternas, garrafas e acessórios para bicicletas.</p>
-            <a class="consultar" data-produto="Acessórios para bikes" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Acessórios para bikes">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/ferramentas.jpg" alt="Ferramentas">
+          <div class="product-photo">
+            <img src="imagens/produtos/ferramentas.jpg" alt="Ferramentas">
+          </div>
           <div class="product-info">
             <h3>Ferramentas</h3>
             <p>Parafusadeiras, ferramentas e equipamentos.</p>
-            <a class="consultar" data-produto="Ferramentas" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Ferramentas">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/caixas-som.jpg" alt="Caixas de som">
+          <div class="product-photo">
+            <img src="imagens/produtos/caixas-som.jpg" alt="Caixas de som">
+          </div>
           <div class="product-info">
             <h3>Som e eletrônicos</h3>
             <p>Caixas de som e eletrônicos variados.</p>
-            <a class="consultar" data-produto="Som e eletrônicos" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Som e eletrônicos">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/pilhas-baterias.jpg" alt="Pilhas e baterias">
+          <div class="product-photo">
+            <img src="imagens/produtos/pilhas-baterias.jpg" alt="Pilhas e baterias">
+          </div>
           <div class="product-info">
             <h3>Pilhas e baterias</h3>
             <p>Pilhas, baterias e fontes de alimentação.</p>
-            <a class="consultar" data-produto="Pilhas e baterias" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Pilhas e baterias">Consultar produto →</a>
           </div>
         </article>
 
+
         <article class="product-card">
-          <img src="imagens/produtos/importados.jpg" alt="Produtos importados">
+          <div class="product-photo">
+            <img src="imagens/produtos/importados.jpg" alt="Produtos importados">
+          </div>
           <div class="product-info">
             <h3>Importados e novidades</h3>
             <p>Produtos diferenciados e novidades.</p>
-            <a class="consultar" data-produto="Importados e novidades" href="#">Consultar produto →</a>
+            <a href="#" class="consultar" data-produto="Importados e novidades">Consultar produto →</a>
           </div>
         </article>
 
@@ -149,51 +224,117 @@
     </div>
   </section>
 
+
+  <!-- GRAVAÇÃO A LASER -->
+
   <section class="laser" id="laser">
     <div class="container laser-content">
+
       <div class="laser-image">
-        <!-- IMAGEM DA GRAVAÇÃO A LASER -->
-        <img src="imagens/produtos/gravacao-laser.jpg" alt="Personalização com gravação a laser">
+        <img
+          src="imagens/produtos/gravacao-laser.jpg"
+          alt="Personalização com gravação a laser">
       </div>
+
       <div class="laser-text">
         <span class="eyebrow">PERSONALIZAÇÃO</span>
-        <h2>Gravação e personalização <span>a laser</span></h2>
-        <p>Personalização de produtos com gravações exclusivas em diferentes materiais.</p>
-        <a class="btn" href="#" id="laser-whatsapp">Solicitar orçamento</a>
+
+        <h2>
+          Gravação e personalização
+          <span>a laser</span>
+        </h2>
+
+        <p>
+          Personalização de produtos com gravações exclusivas
+          em diferentes materiais.
+        </p>
+
+        <a href="#" class="btn" id="laser-whatsapp">
+          Solicitar orçamento
+        </a>
       </div>
+
     </div>
   </section>
 
-  <section class="about section" id="sobre">
+
+  <!-- SOBRE -->
+
+  <section class="section about" id="sobre">
     <div class="container about-content">
+
       <div>
         <span class="eyebrow">QUEM SOMOS</span>
-        <h2>Soluções que conectam <span>tecnologia e praticidade.</span></h2>
+
+        <h2>
+          Soluções que conectam
+          <span>tecnologia e praticidade.</span>
+        </h2>
       </div>
-      <p>A RM Soluções & Tecnologia reúne produtos, equipamentos e soluções para diferentes necessidades. Nosso objetivo é oferecer variedade, qualidade e um atendimento próximo de cada cliente.</p>
+
+      <p>
+        A RM Soluções & Tecnologia reúne produtos,
+        equipamentos e soluções para diferentes necessidades.
+        Nosso objetivo é oferecer variedade, qualidade
+        e um atendimento próximo de cada cliente.
+      </p>
+
     </div>
   </section>
 
-  <section class="contact section" id="contato">
+
+  <!-- CONTATO -->
+
+  <section class="section contact" id="contato">
     <div class="container contact-content">
+
       <span class="eyebrow">FALE COM A GENTE</span>
+
       <h2>Está procurando algum produto?</h2>
-      <p>Entre em contato e consulte disponibilidade, valores e condições.</p>
-      <a href="#" class="btn" id="contact-whatsapp">Conversar pelo WhatsApp</a>
+
+      <p>
+        Entre em contato e consulte disponibilidade,
+        valores e condições.
+      </p>
+
+      <a href="#" class="btn" id="contact-whatsapp">
+        Conversar pelo WhatsApp
+      </a>
+
     </div>
   </section>
+
 </main>
+
+
+<!-- RODAPÉ -->
 
 <footer class="footer">
   <div class="container footer-content">
+
     <a href="#inicio" class="logo">RM<span>.</span></a>
+
     <p>RM Soluções & Tecnologia</p>
-    <small>© <span id="year"></span> Todos os direitos reservados.</small>
+
+    <small>
+      © <span id="year"></span> Todos os direitos reservados.
+    </small>
+
   </div>
 </footer>
 
-<a href="#" class="floating-whatsapp" id="floating-whatsapp" aria-label="WhatsApp">WhatsApp</a>
+
+<!-- WHATSAPP FIXO -->
+
+<a
+  href="#"
+  class="floating-whatsapp"
+  id="floating-whatsapp">
+  WhatsApp
+</a>
+
 
 <script src="script.js"></script>
+
 </body>
 </html>
