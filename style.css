@@ -1,17 +1,7 @@
-/* =========================
-   CONFIGURAÇÕES GERAIS
-========================= */
 
-:root {
-  --black: #101010;
-  --dark: #171717;
-  --gray: #222222;
-  --light-gray: #a6a6a6;
-  --white: #ffffff;
-  --red: #e32636;
-  --red-dark: #b81727;
-  --background: #f5f5f5;
-}
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
 
 * {
   margin: 0;
@@ -21,18 +11,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 85px;
 }
 
 body {
   font-family: "DM Sans", sans-serif;
-  color: var(--black);
-  background: var(--white);
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
+  background: #101113;
+  color: #f4f4f4;
+  line-height: 1.6;
 }
 
 a {
@@ -40,173 +25,137 @@ a {
   color: inherit;
 }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
-
 .container {
   width: min(1160px, 90%);
-  margin: 0 auto;
+  margin: auto;
 }
 
-.section {
-  padding: 90px 0;
-}
-
-.section-tag {
-  display: inline-block;
-  color: var(--red);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-}
-
-h1, h2, h3 {
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: clamp(28px, 4vw, 42px);
-  font-weight: 800;
-}
-
-h2 span,
-.hero h1 span {
-  color: var(--red);
+img {
+  max-width: 100%;
 }
 
 
-/* =========================
+/* =====================================
    CABEÇALHO
-========================= */
+===================================== */
 
 .header {
-  width: 100%;
-  background: #111111;
-  color: white;
+  background: #111214;
+  border-bottom: 1px solid #292a2d;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  border-bottom: 2px solid var(--red);
+  z-index: 100;
 }
 
-.header-content {
-  min-height: 78px;
+.nav {
+  min-height: 82px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   gap: 25px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-rm {
-  color: var(--red);
-  font-size: 35px;
+  font-size: 34px;
   font-weight: 800;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 10px;
-  letter-spacing: 1.2px;
-  font-weight: 700;
+.logo span {
+  color: #e32636;
 }
 
-.logo-text strong {
-  color: var(--red);
-}
-
-.nav {
+nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-.nav a {
-  font-size: 13px;
-  color: #dddddd;
-  transition: 0.2s;
+nav a {
+  color: #c3c3c3;
+  font-size: 14px;
+  transition: .2s;
 }
 
-.nav a:hover {
-  color: var(--red);
-}
-
-.nav .nav-contact {
-  background: var(--red);
-  padding: 11px 18px;
-  border-radius: 5px;
-  color: white;
-}
-
-.nav .nav-contact:hover {
-  background: var(--red-dark);
-  color: white;
-}
-
-.menu-button {
-  display: none;
-  border: none;
-  background: none;
-  color: white;
-  font-size: 27px;
+nav a:hover {
+  color: #e32636;
 }
 
 
-/* =========================
+/* =====================================
    BOTÕES
-========================= */
+===================================== */
 
 .btn {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
-  padding: 14px 22px;
+  align-items: center;
+  background: #e32636;
+  color: #fff;
+  padding: 13px 22px;
   border-radius: 5px;
-  font-size: 13px;
   font-weight: 700;
-  transition: 0.25s;
-  border: 1px solid transparent;
+  border: 1px solid #e32636;
+  transition: .2s;
+  cursor: pointer;
 }
 
-.btn-primary {
-  background: var(--red);
-  color: white;
-}
-
-.btn-primary:hover {
-  background: var(--red-dark);
+.btn:hover {
+  background: #bd1b29;
+  border-color: #bd1b29;
   transform: translateY(-2px);
 }
 
+.btn-small {
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
 .btn-outline {
-  color: white;
-  border-color: #777777;
+  background: transparent;
+  border-color: #555;
 }
 
 .btn-outline:hover {
-  border-color: var(--red);
-  color: var(--red);
+  background: #222;
+  border-color: #e32636;
 }
 
 
-/* =========================
-   DESTAQUE PRINCIPAL
-========================= */
+/* =====================================
+   TEXTOS PADRÃO
+===================================== */
+
+.eyebrow {
+  display: inline-block;
+  color: #e32636;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h1 span,
+.section-heading h2 span,
+.laser-text h2 span,
+.about h2 span {
+  color: #e32636;
+}
+
+
+/* =====================================
+   SEÇÃO INICIAL
+===================================== */
 
 .hero {
-  background: #151515;
-  color: white;
   padding: 85px 0;
+  background:
+    radial-gradient(
+      circle at 80% 40%,
+      #292022 0,
+      #101113 48%
+    );
 }
 
 .hero-content {
@@ -216,34 +165,39 @@ h2 span,
   gap: 55px;
 }
 
-.hero-text h1 {
-  font-size: clamp(36px, 5vw, 57px);
-  font-weight: 800;
-  line-height: 1.12;
+.hero h1 {
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1.08;
+  letter-spacing: -2px;
   margin-bottom: 22px;
 }
 
 .hero-text p {
-  color: #c4c4c4;
-  font-size: 15px;
-  line-height: 1.8;
-  max-width: 490px;
-  margin-bottom: 30px;
+  color: #aaa;
+  max-width: 520px;
 }
 
 .hero-buttons {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
+
+
+/* =====================================
+   FOTO PRINCIPAL
+   MOLDURA ACOMPANHA A FOTO
+===================================== */
 
 .hero-image {
   width: 100%;
-  min-width: 0;
+  height: auto;
   overflow: hidden;
-  border-radius: 9px;
-  border: 1px solid #363636;
-  background: #202020;
+  border: 1px solid #383838;
+  border-radius: 10px;
+  background: transparent;
+  display: block;
 }
 
 .hero-image img {
@@ -254,107 +208,103 @@ h2 span,
 }
 
 
-/* =========================
+/* =====================================
    DIFERENCIAIS
-========================= */
+===================================== */
 
-.features {
-  background: #202020;
-  color: white;
-  padding: 28px 0;
+.benefits {
+  background: #191a1d;
+  border-top: 1px solid #292a2d;
+  border-bottom: 1px solid #292a2d;
+  padding: 25px 0;
 }
 
-.features-grid {
+.benefits-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 20px;
 }
 
-.feature {
+.benefits-grid div {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.feature-icon {
-  width: 43px;
-  height: 43px;
-  display: grid;
-  place-items: center;
-  border-radius: 7px;
-  background: #302024;
-  color: var(--red);
-  font-size: 23px;
-  font-weight: 800;
+.benefits-grid strong {
+  color: #e32636;
+  font-size: 25px;
 }
 
-.feature h3 {
+.benefits-grid span {
+  color: #ccc;
   font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.feature p {
-  color: #aaa;
-  font-size: 12px;
 }
 
 
-/* =========================
-   TÍTULOS DE SEÇÃO
-========================= */
+/* =====================================
+   SEÇÕES
+===================================== */
+
+.section {
+  padding: 85px 0;
+}
 
 .section-heading {
   text-align: center;
-  max-width: 650px;
-  margin: 0 auto 45px;
+  margin-bottom: 45px;
 }
 
-.section-heading h2 {
-  margin-bottom: 12px;
+.section-heading h2,
+.laser-text h2,
+.about h2,
+.contact h2 {
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  margin-bottom: 14px;
 }
 
 .section-heading p {
-  color: #777;
-  font-size: 14px;
-  line-height: 1.7;
+  color: #aaa;
+  margin: auto;
 }
 
 
-/* =========================
-   PRODUTOS
-========================= */
-
-.products {
-  background: var(--background);
-}
+/* =====================================
+   CATÁLOGO DE PRODUTOS
+===================================== */
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .product-card {
-  min-width: 0;
-  background: white;
-  border: 1px solid #e6e6e6;
+  background: #1a1b1e;
+  border: 1px solid #303135;
   border-radius: 8px;
   overflow: hidden;
-  transition: 0.25s;
+  transition: .25s;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
-  border-color: #dddddd;
+  border-color: #e32636;
 }
+
+
+/* =====================================
+   FOTOS DOS PRODUTOS
+   SEM ALTURA FIXA
+===================================== */
 
 .product-photo {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: #eeeeee;
+  display: block;
+  background: #242529;
 }
 
 .product-photo img {
@@ -362,333 +312,236 @@ h2 span,
   width: 100%;
   height: auto;
   object-fit: contain;
+  object-position: center;
 }
+
+
+/* =====================================
+   INFORMAÇÕES DOS PRODUTOS
+===================================== */
 
 .product-info {
   padding: 22px;
 }
 
-.product-number {
-  display: inline-block;
-  color: var(--red);
-  font-size: 12px;
-  font-weight: 800;
-  margin-bottom: 9px;
-}
-
 .product-info h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 19px;
+  margin-bottom: 8px;
 }
 
 .product-info p {
-  color: #777;
-  font-size: 13px;
-  line-height: 1.7;
-  min-height: 44px;
-  margin-bottom: 20px;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 17px;
 }
 
-.product-button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  background: #171717;
-  color: white;
-  font-size: 12px;
+.consultar {
+  color: #ef4b58;
+  font-size: 14px;
   font-weight: 700;
-  transition: 0.2s;
+  display: inline-block;
 }
 
-.product-button:hover {
-  background: var(--red);
-}
-
-.featured-card {
-  border-top: 3px solid var(--red);
+.consultar:hover {
+  color: #fff;
 }
 
 
-/* =========================
-   SOBRE A EMPRESA
-========================= */
+/* =====================================
+   GRAVAÇÃO A LASER
+===================================== */
 
-.about {
-  background: white;
+.laser {
+  padding: 75px 0;
+  background: #1a1b1e;
+  border-top: 1px solid #303135;
+  border-bottom: 1px solid #303135;
 }
 
-.about-content {
+.laser-content {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 70px;
+  gap: 55px;
 }
 
-.about-image {
-  background: #151515;
-  border-radius: 9px;
-  min-height: 280px;
-  padding: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* FOTO LASER - MOLDURA AUTOMÁTICA */
+
+.laser-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  display: block;
 }
 
-.about-image img {
+.laser-image img {
   display: block;
   width: 100%;
-  max-width: 330px;
   height: auto;
   object-fit: contain;
 }
 
-.about-text h2 {
-  margin-bottom: 20px;
-}
-
-.about-text p {
-  color: #777;
-  font-size: 14px;
-  line-height: 1.9;
+.laser-text p {
+  color: #aaa;
   margin-bottom: 25px;
 }
 
 
-/* =========================
-   LOCALIZAÇÃO
-========================= */
+/* =====================================
+   SOBRE
+===================================== */
 
-.location {
-  background: #f3f3f3;
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
 }
 
-.location-card {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 40px 25px;
-  text-align: center;
-  background: white;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-}
-
-.location-icon {
-  color: var(--red);
-  font-size: 38px;
-  margin-bottom: 15px;
-}
-
-.location-card h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.address-placeholder {
-  color: #888;
-  font-size: 14px;
+.about-content > p {
+  color: #aaa;
+  font-size: 16px;
 }
 
 
-/* =========================
+/* =====================================
    CONTATO
-========================= */
+===================================== */
 
 .contact {
-  background: #171717;
-  color: white;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #211719,
+    #111214
+  );
 }
 
 .contact-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
 }
 
-.contact-content h2 {
-  max-width: 600px;
-  margin-bottom: 12px;
-}
-
-.contact-content p {
+.contact p {
   color: #aaa;
-  font-size: 14px;
-  line-height: 1.7;
+  margin-bottom: 25px;
 }
 
 
-/* =========================
+/* =====================================
    RODAPÉ
-========================= */
+===================================== */
 
 .footer {
-  background: #0c0c0c;
-  color: white;
-  padding: 25px 0;
+  background: #0b0c0e;
+  border-top: 1px solid #292a2d;
+  padding: 30px 0;
 }
 
 .footer-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.footer-logo {
-  color: var(--red);
-  font-size: 23px;
-  font-weight: 800;
-}
-
-.footer-logo span {
-  color: white;
-  font-size: 10px;
-  letter-spacing: 1px;
-}
-
-.footer-content p {
-  color: #888;
-  font-size: 11px;
+.footer p,
+.footer small {
+  color: #999;
+  font-size: 13px;
 }
 
 
-/* =========================
-   WHATSAPP FLUTUANTE
-========================= */
+/* =====================================
+   WHATSAPP FIXO
+===================================== */
 
-.whatsapp-float {
+.floating-whatsapp {
   position: fixed;
   right: 22px;
   bottom: 22px;
-  z-index: 999;
-  background: #20b95a;
-  color: white;
-  padding: 14px 19px;
-  border-radius: 40px;
-  font-size: 13px;
-  font-weight: 800;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-  transition: 0.2s;
+  background: #20b85a;
+  color: #fff;
+  padding: 13px 19px;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 5px 20px #0008;
+  z-index: 99;
+  transition: .2s;
 }
 
-.whatsapp-float:hover {
+.floating-whatsapp:hover {
   background: #159447;
   transform: translateY(-3px);
 }
 
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
+/* =====================================
+   TABLETS
+===================================== */
 
-@media (max-width: 900px) {
-  .hero-content {
-    gap: 30px;
-  }
-
-  .products-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .about-content {
-    gap: 35px;
-  }
+@media (max-width: 850px) {
 
   .nav {
-    gap: 17px;
-  }
-}
-
-@media (max-width: 700px) {
-  .section {
-    padding: 65px 0;
+    flex-wrap: wrap;
+    padding: 15px 0;
   }
 
-  .header-content {
-    min-height: 68px;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-    position: absolute;
-    top: 68px;
-    left: 0;
+  nav {
+    order: 3;
     width: 100%;
-    padding: 20px 5%;
-    background: #111;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    border-top: 1px solid #333;
+    justify-content: center;
+    gap: 15px;
   }
 
-  .nav.active {
-    display: flex;
-  }
-
-  .nav a {
-    padding: 13px 5px;
-    border-bottom: 1px solid #292929;
-  }
-
-  .nav .nav-contact {
-    margin-top: 12px;
-    text-align: center;
-    border: none;
+  .hero-content,
+  .laser-content,
+  .about-content {
+    grid-template-columns: 1fr;
   }
 
   .hero {
-    padding: 60px 0;
-  }
-
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .hero-text h1 {
-    font-size: 39px;
-  }
-
-  .hero-text p {
-    font-size: 14px;
-  }
-
-  .hero-image {
-    max-width: 100%;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    padding: 55px 0;
   }
 
   .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =====================================
+   CELULARES
+===================================== */
+
+@media (max-width: 550px) {
+
+  .products-grid,
+  .benefits-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
-  .product-info p {
-    min-height: 0;
+  .benefits-grid {
+    gap: 14px;
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .section {
+    padding: 60px 0;
   }
 
-  .about-image {
-    min-height: 220px;
-  }
-
-  .contact-content {
+  .hero-buttons {
     flex-direction: column;
-    align-items: flex-start;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
   }
 
   .footer-content {
@@ -696,9 +549,9 @@ h2 span,
     text-align: center;
   }
 
-  .whatsapp-float {
+  .floating-whatsapp {
     right: 15px;
     bottom: 15px;
-    padding: 13px 16px;
   }
+
 }
