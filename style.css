@@ -234,54 +234,42 @@ p {
 /* ESPAÇOS DAS IMAGENS */
 
 .hero-image {
+  width: 100%;
   height: 390px;
   border-radius: 7px;
   position: relative;
+  overflow: hidden;
   box-shadow: 0 25px 65px #0008;
+  background: #15171b;
+  border: 1px dashed #666b75;
 }
 
-.image-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: radial-gradient(circle at 50% 40%, #282b31, #15171b 68%);
-  border: 1px dashed #666b75;
-  color: #d4d6db;
-  text-align: center;
+.product-photo {
+  width: 100%;
+  height: 205px;
   position: relative;
+  overflow: hidden;
+  background: #15171b;
+  border-bottom: 1px solid var(--line);
+}
+
+.solutions-art {
+  min-height: 230px;
+  border: 1px dashed #ffffff35;
+  border-radius: 5px;
+  background: #191316;
   overflow: hidden;
 }
 
-.image-placeholder:before {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  border: 1px solid #ffffff0b;
-  pointer-events: none;
+.about-logo {
+  min-height: 240px;
+  border: 1px dashed #666b75;
+  background: #15171b;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.image-placeholder > i {
-  font-size: 2.7rem;
-  color: var(--red);
-}
-
-.image-placeholder > strong,
-.image-placeholder > span {
-  font-size: .65rem;
-  letter-spacing: .13em;
-  font-weight: 800;
-}
-
-.image-placeholder > small {
-  font-size: .68rem;
-  color: #9297a0;
-}
-
-.hero-placeholder {
-  height: 390px;
-}
+/* SELO FLUTUANTE DO BANNER */
 
 .hero-float {
   position: absolute;
@@ -346,7 +334,7 @@ p {
   font-size: .9rem;
 }
 
-/* CARTÕES DE PRODUTOS */
+/* PRODUTOS */
 
 .product-card {
   height: 100%;
@@ -363,50 +351,15 @@ p {
   box-shadow: 0 15px 35px #0004;
 }
 
-.product-photo {
-  height: 205px;
-  border: 0;
-  border-bottom: 1px solid var(--line);
-  border-radius: 0;
-  position: relative;
-}
-
-.product-photo > i {
-  font-size: 2.8rem;
-}
-
-.product-photo > span {
-  font-size: .62rem;
-  letter-spacing: .13em;
-  font-weight: 800;
-}
-
-.product-photo > small {
-  font-size: .65rem;
-  color: #858b95;
-}
-
-.product-tag {
-  position: absolute;
-  top: 13px;
-  left: 13px;
-  padding: 6px 8px;
-  background: var(--red);
-  color: #fff;
-  font-size: .55rem;
-  letter-spacing: .1em;
-  border-radius: 2px;
-}
-
-.product-info {
-  padding: 19px;
-}
-
 .product-type {
   font-size: .58rem;
   letter-spacing: .15em;
   color: var(--red-bright);
   font-weight: 800;
+}
+
+.product-info {
+  padding: 19px;
 }
 
 .product-info h3 {
@@ -493,7 +446,7 @@ p {
   margin-top: 4px;
 }
 
-/* CHAMADA WHATSAPP */
+/* CHAMADA */
 
 .solutions-section {
   padding: 10px 0 95px;
@@ -516,37 +469,7 @@ p {
   margin: 18px 0 23px;
 }
 
-.solutions-art {
-  min-height: 230px;
-  border: 1px solid #ffffff1c;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: radial-gradient(circle, #4b1a22, #191316 70%);
-}
-
-.solutions-art i {
-  font-size: 3.4rem;
-  color: #ff6875;
-  margin-bottom: 13px;
-}
-
-.solutions-art span {
-  font-size: .6rem;
-  letter-spacing: .2em;
-  color: #c1aeb1;
-  font-weight: 800;
-}
-
-.solutions-art b {
-  font: 800 1.35rem Montserrat;
-  margin-top: 8px;
-}
-
-/* SOBRE A LOJA */
+/* SOBRE */
 
 .about-section {
   background: #0d0f12;
@@ -557,28 +480,6 @@ p {
   grid-template-columns: .7fr 1.3fr;
   gap: 60px;
   align-items: center;
-}
-
-.about-logo {
-  min-height: 240px;
-  border: 1px solid var(--line);
-  background: linear-gradient(145deg, #191b20, #101114);
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-logo .logo-mark {
-  font-size: 5rem;
-}
-
-.about-logo small {
-  font-size: .65rem;
-  letter-spacing: .2em;
-  color: #b8bbc2;
-  font-weight: 800;
 }
 
 .about-content p {
@@ -679,7 +580,7 @@ p {
   color: #70757e;
 }
 
-/* BOTÕES FLUTUANTES */
+/* WHATSAPP FLUTUANTE */
 
 .floating-whatsapp {
   position: fixed;
@@ -703,33 +604,14 @@ p {
   color: #fff;
 }
 
-#btnTop {
-  display: none;
-  position: fixed;
-  right: 28px;
-  bottom: 88px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid #ffffff35;
-  background: #202329;
-  color: #fff;
-  z-index: 900;
-}
-
-#btnTop:hover {
-  background: var(--red);
-}
-
-/* RESPONSIVIDADE */
+/* TABLETS */
 
 @media(max-width: 991px) {
   .hero {
     padding: 130px 0 75px;
   }
 
-  .hero-image,
-  .hero-placeholder {
+  .hero-image {
     height: 330px;
   }
 
@@ -752,6 +634,8 @@ p {
   }
 }
 
+/* CELULARES */
+
 @media(max-width: 767px) {
   h1 {
     font-size: clamp(2.7rem, 12vw, 4rem);
@@ -761,9 +645,13 @@ p {
     padding: 118px 0 65px;
   }
 
-  .hero-image,
-  .hero-placeholder {
+  .hero-image {
     height: 280px;
+  }
+
+  .hero-float {
+    right: 8px;
+    top: 15px;
   }
 
   .hero-notes {
@@ -818,10 +706,6 @@ p {
     min-height: 170px;
   }
 
-  .about-logo .logo-mark {
-    font-size: 4rem;
-  }
-
   .contact-panel {
     padding: 28px 22px;
   }
@@ -846,65 +730,4 @@ p {
   *:after {
     transition: none !important;
   }
-}
-
-/* =================================
-   AJUSTE DAS IMAGENS DO SITE
-================================= */
-
-/* IMAGEM PRINCIPAL */
-.hero-image {
-    width: 100%;
-    height: 390px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 7px;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-}
-
-/* FOTOS DOS PRODUTOS */
-.product-photo {
-    width: 100%;
-    height: 205px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.product-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    padding: 10px;
-    display: block;
-}
-
-/* TABLET */
-@media (max-width: 991px) {
-    .hero-image {
-        height: 330px;
-    }
-}
-
-/* CELULAR */
-@media (max-width: 767px) {
-    .hero-image {
-        height: 280px;
-    }
-
-    .product-photo {
-        height: 180px;
-    }
 }
