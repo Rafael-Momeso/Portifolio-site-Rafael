@@ -4,308 +4,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101114">
-
+  <meta name="theme-color" content="#111111">
   <title>RM Soluções & Tecnologia</title>
-  <meta name="description" content="RM Soluções & Tecnologia. Materiais elétricos, CFTV, automação, eletrônicos, ferramentas e personalização.">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
+<header class="header">
   <div class="container nav">
-
-    <a href="#inicio" class="logo">
-      <div class="logo-symbol">R<span>M</span></div>
-      <div class="logo-text">
-        <strong>RM SOLUÇÕES</strong>
-        <small>& TECNOLOGIA</small>
-      </div>
-    </a>
-
-    <nav class="menu">
+    <a href="#inicio" class="logo">RM<span>.</span></a>
+    <nav>
       <a href="#inicio">Início</a>
-      <a href="#categorias">Produtos</a>
-      <a href="#personalizacao">Personalização</a>
-      <a href="#sobre">A RM</a>
-      <a href="#contato" class="contact-link">Contato</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#laser">Gravação a laser</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
     </nav>
-
+    <a class="btn btn-small" href="#contato">Fale conosco</a>
   </div>
 </header>
 
 <main>
-
-  <!-- INÍCIO -->
-
   <section class="hero" id="inicio">
-    <div class="container">
-      <div class="hero-content">
-
-        <div class="tag">Tecnologia e soluções</div>
-
-        <h1>
-          Tecnologia,<br>
-          variedade e <span>soluções.</span>
-        </h1>
-
-        <p>
-          Produtos, equipamentos e soluções para o seu dia a dia.
-          Conheça a RM Soluções & Tecnologia e encontre o que você procura.
-        </p>
-
-        <div class="buttons">
-          <a href="#categorias" class="btn btn-red">
-            CONHEÇA NOSSOS PRODUTOS
-          </a>
-
-          <a href="#contato" class="btn btn-outline">
-            FALE CONOSCO
-          </a>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="eyebrow">RM SOLUÇÕES & TECNOLOGIA</span>
+        <h1>Tecnologia,<br><span>soluções</span> e inovação.</h1>
+        <p>Produtos, equipamentos e soluções para sua casa, empresa e dia a dia.</p>
+        <div class="hero-buttons">
+          <a href="#produtos" class="btn">Conheça nossos produtos</a>
+          <a href="#contato" class="btn btn-outline">Entre em contato</a>
         </div>
+      </div>
 
+      <div class="hero-image">
+        <!-- IMAGEM PRINCIPAL -->
+        <img src="imagens/banner-loja.jpg" alt="RM Soluções e Tecnologia">
       </div>
     </div>
   </section>
 
-  <!-- DIFERENCIAIS -->
-
-  <div class="features">
-    <div class="container features-grid">
-
-      <div class="feature">
-        <strong>VARIEDADE</strong>
-        <small>Diversos segmentos em um só lugar</small>
-      </div>
-
-      <div class="feature">
-        <strong>TECNOLOGIA</strong>
-        <small>Produtos e soluções tecnológicas</small>
-      </div>
-
-      <div class="feature">
-        <strong>ATENDIMENTO</strong>
-        <small>Consulte nossa equipe</small>
-      </div>
-
+  <section class="benefits">
+    <div class="container benefits-grid">
+      <div><strong>01</strong><span>Qualidade nos produtos</span></div>
+      <div><strong>02</strong><span>Variedade de soluções</span></div>
+      <div><strong>03</strong><span>Atendimento especializado</span></div>
     </div>
-  </div>
+  </section>
 
-  <!-- PRODUTOS -->
-
-  <section class="section" id="categorias">
+  <section class="section products" id="produtos">
     <div class="container">
-
       <div class="section-heading">
-        <div class="tag">Nossos segmentos</div>
-
-        <h2>
-          Tudo o que você procura,<br>
-          <span>em um só lugar.</span>
-        </h2>
-
-        <p>
-          Conheça algumas das categorias disponíveis na RM.
-          Consulte nossa equipe para informações sobre produtos e disponibilidade.
-        </p>
+        <span class="eyebrow">NOSSO CATÁLOGO</span>
+        <h2>Conheça nossos <span>produtos</span></h2>
+        <p>Confira algumas das nossas categorias.</p>
       </div>
 
-      <div class="categories">
+      <div class="products-grid">
 
-        <article class="category">
-          <span class="category-icon">⚡</span>
-          <h3>Materiais Elétricos</h3>
-          <p>Tomadas, interruptores, conectores, cabos e componentes elétricos.</p>
-          <a href="#" class="more consultar" data-produto="Materiais elétricos">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/materiais-eletricos.jpg" alt="Materiais elétricos">
+          <div class="product-info">
+            <h3>Materiais elétricos</h3>
+            <p>Tomadas, conectores, cabos e componentes.</p>
+            <a class="consultar" data-produto="Materiais elétricos" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">📹</span>
-          <h3>Câmeras e Segurança</h3>
-          <p>Soluções em CFTV, câmeras, alarmes, cercas elétricas e acessórios.</p>
-          <a href="#" class="more consultar" data-produto="Câmeras e segurança">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/cameras.jpg" alt="Câmeras e segurança">
+          <div class="product-info">
+            <h3>Câmeras e segurança</h3>
+            <p>Câmeras, alarmes e equipamentos de segurança.</p>
+            <a class="consultar" data-produto="Câmeras e segurança" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">🚪</span>
-          <h3>Motores para Portões</h3>
-          <p>Equipamentos, controles e acessórios para automação de portões.</p>
-          <a href="#" class="more consultar" data-produto="Motores para portões">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/motores-portao.jpg" alt="Motores para portões">
+          <div class="product-info">
+            <h3>Motores para portões</h3>
+            <p>Automatizadores e acessórios para portões.</p>
+            <a class="consultar" data-produto="Motores para portões" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">📱</span>
-          <h3>Acessórios para Celulares</h3>
-          <p>Carregadores, cabos, suportes, películas e diversos acessórios.</p>
-          <a href="#" class="more consultar" data-produto="Acessórios para celulares">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/acessorios-celular.jpg" alt="Acessórios para celular">
+          <div class="product-info">
+            <h3>Acessórios para celular</h3>
+            <p>Cabos, carregadores, suportes e acessórios.</p>
+            <a class="consultar" data-produto="Acessórios para celular" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">🚲</span>
-          <h3>Acessórios para Bicicletas</h3>
-          <p>Lanternas, garrafinhas, suportes e acessórios para bicicletas.</p>
-          <a href="#" class="more consultar" data-produto="Acessórios para bicicletas">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/acessorios-bike.jpg" alt="Acessórios para bicicletas">
+          <div class="product-info">
+            <h3>Acessórios para bikes</h3>
+            <p>Lanternas, garrafas e acessórios para bicicletas.</p>
+            <a class="consultar" data-produto="Acessórios para bikes" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">🔧</span>
-          <h3>Ferramentas</h3>
-          <p>Parafusadeiras, ferramentas manuais e equipamentos diversos.</p>
-          <a href="#" class="more consultar" data-produto="Ferramentas">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/ferramentas.jpg" alt="Ferramentas">
+          <div class="product-info">
+            <h3>Ferramentas</h3>
+            <p>Parafusadeiras, ferramentas e equipamentos.</p>
+            <a class="consultar" data-produto="Ferramentas" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">🔊</span>
-          <h3>Eletrônicos e Som</h3>
-          <p>Caixas de som, equipamentos eletrônicos e acessórios tecnológicos.</p>
-          <a href="#" class="more consultar" data-produto="Eletrônicos e som">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/caixas-som.jpg" alt="Caixas de som">
+          <div class="product-info">
+            <h3>Som e eletrônicos</h3>
+            <p>Caixas de som e eletrônicos variados.</p>
+            <a class="consultar" data-produto="Som e eletrônicos" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">🔋</span>
-          <h3>Pilhas e Baterias</h3>
-          <p>Pilhas, baterias, fontes, carregadores e componentes.</p>
-          <a href="#" class="more consultar" data-produto="Pilhas e baterias">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/pilhas-baterias.jpg" alt="Pilhas e baterias">
+          <div class="product-info">
+            <h3>Pilhas e baterias</h3>
+            <p>Pilhas, baterias e fontes de alimentação.</p>
+            <a class="consultar" data-produto="Pilhas e baterias" href="#">Consultar produto →</a>
+          </div>
         </article>
 
-        <article class="category">
-          <span class="category-icon">🚁</span>
-          <h3>Importados e Acessórios</h3>
-          <p>Produtos variados, drones, acessórios e novidades.</p>
-          <a href="#" class="more consultar" data-produto="Importados e acessórios">CONSULTAR PRODUTOS →</a>
+        <article class="product-card">
+          <img src="imagens/produtos/importados.jpg" alt="Produtos importados">
+          <div class="product-info">
+            <h3>Importados e novidades</h3>
+            <p>Produtos diferenciados e novidades.</p>
+            <a class="consultar" data-produto="Importados e novidades" href="#">Consultar produto →</a>
+          </div>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- PERSONALIZAÇÃO -->
-
-  <section class="section laser" id="personalizacao">
+  <section class="laser" id="laser">
     <div class="container laser-content">
+      <div class="laser-image">
+        <!-- IMAGEM DA GRAVAÇÃO A LASER -->
+        <img src="imagens/produtos/gravacao-laser.jpg" alt="Personalização com gravação a laser">
+      </div>
+      <div class="laser-text">
+        <span class="eyebrow">PERSONALIZAÇÃO</span>
+        <h2>Gravação e personalização <span>a laser</span></h2>
+        <p>Personalização de produtos com gravações exclusivas em diferentes materiais.</p>
+        <a class="btn" href="#" id="laser-whatsapp">Solicitar orçamento</a>
+      </div>
+    </div>
+  </section>
 
+  <section class="about section" id="sobre">
+    <div class="container about-content">
       <div>
-        <div class="tag">Personalização</div>
-
-        <h2>
-          Personalização<br>
-          e gravação <span>a laser.</span>
-        </h2>
-
-        <p>
-          Dê um toque exclusivo aos seus produtos.
-          Personalização e gravação a laser em garrafas,
-          brindes, chaveiros e diversos objetos.
-        </p>
-
-        <a href="#" class="btn btn-red consultar" data-produto="Personalização e gravação a laser">
-          SOLICITAR INFORMAÇÕES
-        </a>
+        <span class="eyebrow">QUEM SOMOS</span>
+        <h2>Soluções que conectam <span>tecnologia e praticidade.</span></h2>
       </div>
-
-      <div class="laser-visual">
-        <div class="symbol">✦</div>
-        <strong>PERSONALIZAÇÃO RM</strong>
-        <small>Detalhes que fazem a diferença</small>
-      </div>
-
+      <p>A RM Soluções & Tecnologia reúne produtos, equipamentos e soluções para diferentes necessidades. Nosso objetivo é oferecer variedade, qualidade e um atendimento próximo de cada cliente.</p>
     </div>
   </section>
 
-  <!-- SOBRE -->
-
-  <section class="section" id="sobre">
-    <div class="container about-grid">
-
-      <div class="about-box">
-        <div class="big-logo">R<span>M</span></div>
-      </div>
-
-      <div class="about">
-        <div class="tag">Quem somos</div>
-
-        <h2>Conheça a <span>RM.</span></h2>
-
-        <p>
-          A RM Soluções & Tecnologia reúne diferentes segmentos
-          em um único espaço, oferecendo produtos e soluções
-          para necessidades do dia a dia.
-        </p>
-
-        <p>
-          De materiais elétricos a tecnologia, segurança eletrônica,
-          ferramentas e personalização, nosso objetivo é oferecer
-          variedade e praticidade em um só lugar.
-        </p>
-
-        <p>
-          Consulte nossos produtos e conheça nossas soluções.
-        </p>
-      </div>
-
+  <section class="contact section" id="contato">
+    <div class="container contact-content">
+      <span class="eyebrow">FALE COM A GENTE</span>
+      <h2>Está procurando algum produto?</h2>
+      <p>Entre em contato e consulte disponibilidade, valores e condições.</p>
+      <a href="#" class="btn" id="contact-whatsapp">Conversar pelo WhatsApp</a>
     </div>
   </section>
-
-  <!-- CONTATO -->
-
-  <section class="section contact" id="contato">
-    <div class="container">
-
-      <div class="section-heading">
-        <div class="tag">Entre em contato</div>
-
-        <h2>
-          Precisa de alguma coisa?<br>
-          <span>Fale com a RM.</span>
-        </h2>
-
-        <p>
-          Consulte produtos, disponibilidade e solicite informações
-          diretamente pelo WhatsApp.
-        </p>
-      </div>
-
-      <div class="buttons">
-        <a href="#" class="btn btn-red" id="contatoWhats">
-          CONVERSAR PELO WHATSAPP
-        </a>
-      </div>
-
-    </div>
-  </section>
-
 </main>
 
-<!-- RODAPÉ -->
-
-<footer>
+<footer class="footer">
   <div class="container footer-content">
-
-    <a href="#inicio" class="logo">
-      <div class="logo-symbol">R<span>M</span></div>
-      <div class="logo-text">
-        <strong>RM SOLUÇÕES</strong>
-        <small>& TECNOLOGIA</small>
-      </div>
-    </a>
-
-    <p>© <span id="ano"></span> <strong>RM Soluções & Tecnologia.</strong> Todos os direitos reservados.</p>
-
+    <a href="#inicio" class="logo">RM<span>.</span></a>
+    <p>RM Soluções & Tecnologia</p>
+    <small>© <span id="year"></span> Todos os direitos reservados.</small>
   </div>
 </footer>
 
-<!-- WHATSAPP FLUTUANTE -->
+<a href="#" class="floating-whatsapp" id="floating-whatsapp" aria-label="WhatsApp">WhatsApp</a>
 
-<a href="#" class="whatsapp" id="whatsappFlutuante" aria-label="WhatsApp">
-  ☎
-</a>
-
+<script src="script.js"></script>
 </body>
 </html>
