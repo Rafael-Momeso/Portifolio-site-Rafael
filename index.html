@@ -3,516 +3,309 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090a0c">
-  <meta name="description" content="RM Soluções & Tecnologia: câmeras, acessórios para bike, eletrônicos e ferramentas.">
-  <title>RM | Soluções & Tecnologia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101114">
+
+  <title>RM Soluções & Tecnologia</title>
+  <meta name="description" content="RM Soluções & Tecnologia. Materiais elétricos, CFTV, automação, eletrônicos, ferramentas e personalização.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
 
-<div class="top-accent"></div>
+<header>
+  <div class="container nav">
 
-<!-- MENU -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-      <span class="logo-mark">RM<span>.</span></span>
-      <span class="brand-sub">SOLUÇÕES <b>&</b><br>TECNOLOGIA</span>
+    <a href="#inicio" class="logo">
+      <div class="logo-symbol">R<span>M</span></div>
+      <div class="logo-text">
+        <strong>RM SOLUÇÕES</strong>
+        <small>& TECNOLOGIA</small>
+      </div>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Produtos</a>
+      <a href="#personalizacao">Personalização</a>
+      <a href="#sobre">A RM</a>
+      <a href="#contato" class="contact-link">Contato</a>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-        <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
-        <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre a RM</a></li>
-        <li class="nav-item ms-lg-2">
-          <a class="nav-contact" href="https://wa.me/5519997538639" target="_blank">
-            <i class="bi bi-whatsapp"></i> Fale conosco
-          </a>
-        </li>
-      </ul>
-    </div>
   </div>
-</nav>
+</header>
 
 <main>
 
-<!-- BANNER PRINCIPAL -->
-<header class="hero" id="inicio">
-  <div class="hero-pattern"></div>
+  <!-- INÍCIO -->
 
-  <div class="container hero-inner">
-    <div class="row align-items-center g-5">
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
 
-      <div class="col-lg-7">
-        <div class="eyebrow"><span></span> RM SOLUÇÕES & TECNOLOGIA</div>
+        <div class="tag">Tecnologia e soluções</div>
 
-        <h1>Tecnologia para<br>o seu <em>dia a dia.</em></h1>
-
-        <p class="hero-text">
-          Segurança, ciclismo, ferramentas e eletrônicos.
-          Produtos e soluções para facilitar sua rotina.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#destaques" class="btn-red">
-            Ver produtos em destaque <i class="bi bi-arrow-right"></i>
-          </a>
-
-          <a href="https://wa.me/5519997538639" target="_blank" class="btn-outline">
-            <i class="bi bi-whatsapp"></i> Consultar pelo WhatsApp
-          </a>
-        </div>
-
-        <div class="hero-notes">
-          <span><i class="bi bi-check-circle-fill"></i> Atendimento direto</span>
-          <span><i class="bi bi-check-circle-fill"></i> Produtos selecionados</span>
-        </div>
-      </div>
-
-      <div class="col-lg-5">
-        <!-- FOTO PRINCIPAL DA LOJA -->
-        <div class="hero-image image-placeholder hero-placeholder">
-          <i class="bi bi-image"></i>
-          <strong>FOTO PRINCIPAL DA LOJA</strong>
-          <img src="imagens/Logo.png" alt="Descrição da imagem">
-        </div>
-
-        <div class="hero-float">
-          <i class="bi bi-lightning-charge-fill"></i>
-          <span>TECNOLOGIA<br><b>AO SEU ALCANCE</b></span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="hero-line"></div>
-</header>
-
-<!-- PRODUTOS EM DESTAQUE -->
-<section class="section section-dark" id="destaques">
-  <div class="container">
-
-    <div class="section-heading">
-      <div>
-        <div class="eyebrow"><span></span> ESCOLHAS DA RM</div>
-        <h2>Produtos em <em>destaque.</em></h2>
-      </div>
-
-      <p>
-        Uma seleção de produtos que merecem ficar na vitrine.
-        Consulte modelos, valores e disponibilidade com nossa equipe.
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- PRODUTO 1: KIT DE CÂMERAS -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-camera-video"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>kit-cameras.jpg</small>
-            <b class="product-tag">DESTAQUE</b>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">SEGURANÇA ELETRÔNICA</span>
-            <h3>Kits de câmeras</h3>
-            <p>Kits para monitoramento residencial e comercial, com opções conforme a necessidade.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre os kits de câmeras." target="_blank">
-              Consultar produto <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-      <!-- PRODUTO 2: FERRAMENTAS PARA BIKE -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-tools"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>kit-ferramentas-bike.jpg</small>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">CICLISMO</span>
-            <h3>Kit de ferramentas para bike</h3>
-            <p>Ferramentas e acessórios para manutenção e ajustes da bicicleta.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre ferramentas para bike." target="_blank">
-              Consultar produto <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-      <!-- PRODUTO 3: COMPRESSOR -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-wind"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>compressor-portatil.jpg</small>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">CICLISMO</span>
-            <h3>Compressores portáteis</h3>
-            <p>Opções compactas para encher pneus e auxiliar no dia a dia.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre compressores." target="_blank">
-              Consultar produto <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-      <!-- PRODUTO 4: PEÇAS DE BIKE -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-bicycle"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>pecas-bike.jpg</small>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">CICLISMO</span>
-            <h3>Peças e acessórios bike</h3>
-            <p>Itens para equipar, personalizar e cuidar da sua bicicleta.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero conhecer as peças para bike." target="_blank">
-              Consultar produtos <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-      <!-- PRODUTO 5: CICLOCOMPUTADOR -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-speedometer2"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>ciclocomputador.jpg</small>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">CICLISMO</span>
-            <h3>Ciclocomputadores</h3>
-            <p>Equipamentos para acompanhar informações e dados dos seus pedais.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre ciclocomputadores." target="_blank">
-              Consultar produto <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-      <!-- PRODUTO 6: KIT REPARO DE PNEUS -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-bandaid"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>kit-reparo-pneus.jpg</small>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">CICLISMO</span>
-            <h3>Kits de reparo de pneus</h3>
-            <p>Acessórios compactos para pequenos reparos durante seus trajetos.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero informações sobre kits de reparo." target="_blank">
-              Consultar produto <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-      <!-- PRODUTO 7: FONES -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-earbuds"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>fones-ouvido.jpg</small>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">ELETRÔNICOS</span>
-            <h3>Fones de ouvido</h3>
-            <p>Modelos para música, chamadas e entretenimento no dia a dia.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero conhecer os fones disponíveis." target="_blank">
-              Consultar produtos <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-      <!-- PRODUTO 8: CARREGADORES -->
-      <div class="col-sm-6 col-lg-3">
-        <article class="product-card">
-
-          <div class="product-photo image-placeholder">
-            <i class="bi bi-plug"></i>
-            <span>FOTO DO PRODUTO</span>
-            <small>carregadores-cabos.jpg</small>
-          </div>
-
-          <div class="product-info">
-            <span class="product-type">ELETRÔNICOS</span>
-            <h3>Carregadores e cabos</h3>
-            <p>Acessórios para carregar e conectar seus dispositivos.</p>
-
-            <a class="product-link" href="https://wa.me/5519997538639?text=Olá! Quero consultar carregadores e cabos." target="_blank">
-              Consultar produtos <i class="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-        </article>
-      </div>
-
-    </div>
-
-    <p class="stock-note">
-      <i class="bi bi-info-circle"></i>
-      Fotos, modelos, preços e disponibilidade podem ser atualizados conforme os produtos da loja.
-    </p>
-
-  </div>
-</section>
-
-<!-- CATEGORIAS -->
-<section class="section categories-section" id="categorias">
-  <div class="container">
-
-    <div class="section-heading">
-      <div>
-        <div class="eyebrow"><span></span> MAIS PARA DESCOBRIR</div>
-        <h2>Explore nossas <em>categorias.</em></h2>
-      </div>
-
-      <p>
-        Não dá para colocar todo o estoque no site.
-        Organizamos as principais linhas para você encontrar o que procura.
-      </p>
-    </div>
-
-    <div class="row g-3">
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-camera-video"></i>
-          <b>Câmeras e CFTV</b>
-          <span>Kits e acessórios</span>
-        </a>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-bicycle"></i>
-          <b>Peças para bike</b>
-          <span>Componentes e acessórios</span>
-        </a>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-wrench-adjustable"></i>
-          <b>Ferramentas</b>
-          <span>Manutenção e utilidades</span>
-        </a>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-speedometer2"></i>
-          <b>Ciclismo eletrônico</b>
-          <span>Ciclocomputadores</span>
-        </a>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-earbuds"></i>
-          <b>Áudio</b>
-          <span>Fones e caixas de som</span>
-        </a>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-phone"></i>
-          <b>Acessórios mobile</b>
-          <span>Carregadores e cabos</span>
-        </a>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-lightning-charge"></i>
-          <b>Elétrica</b>
-          <span>Materiais e componentes</span>
-        </a>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-        <a class="category-tile" href="#destaques">
-          <i class="bi bi-box-seam"></i>
-          <b>Novidades</b>
-          <span>Gadgets e importados</span>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CHAMADA PARA CONTATO -->
-<section class="solutions-section">
-  <div class="container">
-
-    <div class="solutions-box">
-
-      <div>
-        <div class="eyebrow"><span></span> PRECISA DE ALGO ESPECÍFICO?</div>
-
-        <h2>Não encontrou o que<br>estava procurando?</h2>
+        <h1>
+          Tecnologia,<br>
+          variedade e <span>soluções.</span>
+        </h1>
 
         <p>
-          Chame a RM! Nossa vitrine mostra apenas uma seleção dos destaques.
-          Consulte outros produtos, modelos e disponibilidade diretamente com a equipe.
+          Produtos, equipamentos e soluções para o seu dia a dia.
+          Conheça a RM Soluções & Tecnologia e encontre o que você procura.
         </p>
 
-        <a class="btn-red" href="https://wa.me/5519997538639" target="_blank">
-          Consultar pelo WhatsApp <i class="bi bi-arrow-right"></i>
+        <div class="buttons">
+          <a href="#categorias" class="btn btn-red">
+            CONHEÇA NOSSOS PRODUTOS
+          </a>
+
+          <a href="#contato" class="btn btn-outline">
+            FALE CONOSCO
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+
+  <div class="features">
+    <div class="container features-grid">
+
+      <div class="feature">
+        <strong>VARIEDADE</strong>
+        <small>Diversos segmentos em um só lugar</small>
+      </div>
+
+      <div class="feature">
+        <strong>TECNOLOGIA</strong>
+        <small>Produtos e soluções tecnológicas</small>
+      </div>
+
+      <div class="feature">
+        <strong>ATENDIMENTO</strong>
+        <small>Consulte nossa equipe</small>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PRODUTOS -->
+
+  <section class="section" id="categorias">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="tag">Nossos segmentos</div>
+
+        <h2>
+          Tudo o que você procura,<br>
+          <span>em um só lugar.</span>
+        </h2>
+
+        <p>
+          Conheça algumas das categorias disponíveis na RM.
+          Consulte nossa equipe para informações sobre produtos e disponibilidade.
+        </p>
+      </div>
+
+      <div class="categories">
+
+        <article class="category">
+          <span class="category-icon">⚡</span>
+          <h3>Materiais Elétricos</h3>
+          <p>Tomadas, interruptores, conectores, cabos e componentes elétricos.</p>
+          <a href="#" class="more consultar" data-produto="Materiais elétricos">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">📹</span>
+          <h3>Câmeras e Segurança</h3>
+          <p>Soluções em CFTV, câmeras, alarmes, cercas elétricas e acessórios.</p>
+          <a href="#" class="more consultar" data-produto="Câmeras e segurança">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">🚪</span>
+          <h3>Motores para Portões</h3>
+          <p>Equipamentos, controles e acessórios para automação de portões.</p>
+          <a href="#" class="more consultar" data-produto="Motores para portões">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">📱</span>
+          <h3>Acessórios para Celulares</h3>
+          <p>Carregadores, cabos, suportes, películas e diversos acessórios.</p>
+          <a href="#" class="more consultar" data-produto="Acessórios para celulares">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">🚲</span>
+          <h3>Acessórios para Bicicletas</h3>
+          <p>Lanternas, garrafinhas, suportes e acessórios para bicicletas.</p>
+          <a href="#" class="more consultar" data-produto="Acessórios para bicicletas">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">🔧</span>
+          <h3>Ferramentas</h3>
+          <p>Parafusadeiras, ferramentas manuais e equipamentos diversos.</p>
+          <a href="#" class="more consultar" data-produto="Ferramentas">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">🔊</span>
+          <h3>Eletrônicos e Som</h3>
+          <p>Caixas de som, equipamentos eletrônicos e acessórios tecnológicos.</p>
+          <a href="#" class="more consultar" data-produto="Eletrônicos e som">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">🔋</span>
+          <h3>Pilhas e Baterias</h3>
+          <p>Pilhas, baterias, fontes, carregadores e componentes.</p>
+          <a href="#" class="more consultar" data-produto="Pilhas e baterias">CONSULTAR PRODUTOS →</a>
+        </article>
+
+        <article class="category">
+          <span class="category-icon">🚁</span>
+          <h3>Importados e Acessórios</h3>
+          <p>Produtos variados, drones, acessórios e novidades.</p>
+          <a href="#" class="more consultar" data-produto="Importados e acessórios">CONSULTAR PRODUTOS →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALIZAÇÃO -->
+
+  <section class="section laser" id="personalizacao">
+    <div class="container laser-content">
+
+      <div>
+        <div class="tag">Personalização</div>
+
+        <h2>
+          Personalização<br>
+          e gravação <span>a laser.</span>
+        </h2>
+
+        <p>
+          Dê um toque exclusivo aos seus produtos.
+          Personalização e gravação a laser em garrafas,
+          brindes, chaveiros e diversos objetos.
+        </p>
+
+        <a href="#" class="btn btn-red consultar" data-produto="Personalização e gravação a laser">
+          SOLICITAR INFORMAÇÕES
         </a>
       </div>
 
-      <div class="solutions-art">
-        <i class="bi bi-chat-square-dots"></i>
-        <span>ATENDIMENTO RM</span>
-        <b>Vamos encontrar<br>o que você precisa.</b>
+      <div class="laser-visual">
+        <div class="symbol">✦</div>
+        <strong>PERSONALIZAÇÃO RM</strong>
+        <small>Detalhes que fazem a diferença</small>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SOBRE -->
-<section class="section about-section" id="sobre">
-  <div class="container about-content">
+  <!-- SOBRE -->
 
-    <div class="about-logo">
-      <span class="logo-mark">RM<span>.</span></span>
-      <small>SOLUÇÕES & TECNOLOGIA</small>
+  <section class="section" id="sobre">
+    <div class="container about-grid">
+
+      <div class="about-box">
+        <div class="big-logo">R<span>M</span></div>
+      </div>
+
+      <div class="about">
+        <div class="tag">Quem somos</div>
+
+        <h2>Conheça a <span>RM.</span></h2>
+
+        <p>
+          A RM Soluções & Tecnologia reúne diferentes segmentos
+          em um único espaço, oferecendo produtos e soluções
+          para necessidades do dia a dia.
+        </p>
+
+        <p>
+          De materiais elétricos a tecnologia, segurança eletrônica,
+          ferramentas e personalização, nosso objetivo é oferecer
+          variedade e praticidade em um só lugar.
+        </p>
+
+        <p>
+          Consulte nossos produtos e conheça nossas soluções.
+        </p>
+      </div>
+
     </div>
+  </section>
 
-    <div>
-      <div class="eyebrow"><span></span> SOBRE A LOJA</div>
+  <!-- CONTATO -->
 
-      <h2>Tecnologia, variedade<br>e atendimento <em>próximo.</em></h2>
+  <section class="section contact" id="contato">
+    <div class="container">
 
-      <p>
-        A RM reúne produtos de segurança eletrônica, ciclismo,
-        ferramentas e eletrônicos. Uma vitrine com alguns dos nossos
-        destaques — e uma equipe pronta para ajudar você a consultar outras opções.
-      </p>
+      <div class="section-heading">
+        <div class="tag">Entre em contato</div>
+
+        <h2>
+          Precisa de alguma coisa?<br>
+          <span>Fale com a RM.</span>
+        </h2>
+
+        <p>
+          Consulte produtos, disponibilidade e solicite informações
+          diretamente pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="buttons">
+        <a href="#" class="btn btn-red" id="contatoWhats">
+          CONVERSAR PELO WHATSAPP
+        </a>
+      </div>
+
     </div>
-
-  </div>
-</section>
-
-<!-- CONTATO -->
-<section class="contact-section" id="contato">
-  <div class="container contact-panel">
-
-    <div>
-      <div class="eyebrow"><span></span> FALE COM A GENTE</div>
-      <h2>Vamos conversar?</h2>
-      <p>Consulte um produto, tire suas dúvidas ou peça um orçamento.</p>
-    </div>
-
-    <div class="contact-links">
-      <a href="https://wa.me/5519997538639" target="_blank" class="whatsapp-link">
-        <i class="bi bi-whatsapp"></i> (19) 99753-8639
-      </a>
-
-      <a href="https://www.instagram.com/rmcelulares/" target="_blank" class="instagram-link">
-        <i class="bi bi-instagram"></i> @rmcelulares
-      </a>
-    </div>
-
-  </div>
-</section>
+  </section>
 
 </main>
 
 <!-- RODAPÉ -->
-<footer class="footer">
-  <div class="container footer-inner">
 
-    <a href="#inicio" class="footer-brand">
-      <span class="logo-mark">RM<span>.</span></span>
-      SOLUÇÕES & TECNOLOGIA
+<footer>
+  <div class="container footer-content">
+
+    <a href="#inicio" class="logo">
+      <div class="logo-symbol">R<span>M</span></div>
+      <div class="logo-text">
+        <strong>RM SOLUÇÕES</strong>
+        <small>& TECNOLOGIA</small>
+      </div>
     </a>
 
-    <p>Produtos e soluções para o seu dia a dia.</p>
-
-    <small>
-      © <span id="year"></span> RM Soluções & Tecnologia.
-      Todos os direitos reservados.
-    </small>
+    <p>© <span id="ano"></span> <strong>RM Soluções & Tecnologia.</strong> Todos os direitos reservados.</p>
 
   </div>
 </footer>
 
-<!-- BOTÃO WHATSAPP FLUTUANTE -->
-<a class="floating-whatsapp" href="https://wa.me/5519997538639" target="_blank" aria-label="Chamar a RM">
-  <i class="bi bi-whatsapp"></i>
+<!-- WHATSAPP FLUTUANTE -->
+
+<a href="#" class="whatsapp" id="whatsappFlutuante" aria-label="WhatsApp">
+  ☎
 </a>
-
-<button id="btnTop" aria-label="Voltar ao topo">
-  <i class="bi bi-arrow-up"></i>
-</button>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 
 </body>
 </html>
