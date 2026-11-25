@@ -1,74 +1,95 @@
+// =========================
+// CONFIGURAÇÃO DO WHATSAPP
+// =========================
 
-const WHATSAPP = "5519997538639";
+const numeroWhatsApp = "5519997538639";
 
 function abrirWhatsApp(mensagem) {
   const texto = encodeURIComponent(mensagem);
 
-  window.open(
-    `https://wa.me/${WHATSAPP}?text=${texto}`,
-    "_blank"
-  );
+  const link = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+
+  window.open(link, "_blank");
 }
 
 
-// BOTÕES DE PRODUTOS
+// =========================
+// BOTÕES DOS PRODUTOS
+// =========================
 
-document.querySelectorAll(".consultar").forEach(botao => {
+const botoesProdutos = document.querySelectorAll("[data-produto]");
 
-  botao.addEventListener("click", function(event) {
-
-    event.preventDefault();
-
-    const produto = this.dataset.produto;
+botoesProdutos.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    const produto = botao.dataset.produto;
 
     abrirWhatsApp(
-      `Olá! Gostaria de consultar o produto: ${produto}.`
+      `Olá! Gostaria de consultar informações sobre: ${produto}.`
     );
+  });
+});
 
+
+// =========================
+// BOTÃO DE CONTATO
+// =========================
+
+const contactButton = document.getElementById("contactButton");
+
+if (contactButton) {
+  contactButton.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    abrirWhatsApp(
+      "Olá! Gostaria de mais informações sobre a RM Soluções & Tecnologia."
+    );
+  });
+}
+
+
+// =========================
+// WHATSAPP FLUTUANTE
+// =========================
+
+const whatsappFloat = document.getElementById("whatsappFloat");
+
+if (whatsappFloat) {
+  whatsappFloat.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    abrirWhatsApp(
+      "Olá! Vim pelo site da RM Soluções & Tecnologia e gostaria de atendimento."
+    );
+  });
+}
+
+
+// =========================
+// MENU PARA CELULAR
+// =========================
+
+const menuButton = document.getElementById("menuButton");
+const nav = document.getElementById("nav");
+
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    nav.classList.toggle("active");
   });
 
-});
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
+  });
+}
 
 
-// CONTATO
-
-document.getElementById("contact-whatsapp").addEventListener("click", function(event) {
-
-  event.preventDefault();
-
-  abrirWhatsApp(
-    "Olá! Vim pelo site da RM Soluções & Tecnologia e gostaria de informações."
-  );
-
-});
-
-
-// WHATSAPP FIXO
-
-document.getElementById("floating-whatsapp").addEventListener("click", function(event) {
-
-  event.preventDefault();
-
-  abrirWhatsApp(
-    "Olá! Vim pelo site da RM Soluções & Tecnologia."
-  );
-
-});
-
-
-// GRAVAÇÃO A LASER
-
-document.getElementById("laser-whatsapp").addEventListener("click", function(event) {
-
-  event.preventDefault();
-
-  abrirWhatsApp(
-    "Olá! Gostaria de informações sobre gravação e personalização a laser."
-  );
-
-});
-
-
+// =========================
 // ANO AUTOMÁTICO NO RODAPÉ
+// =========================
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const currentYear = document.getElementById("currentYear");
+
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}
